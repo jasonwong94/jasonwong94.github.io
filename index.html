@@ -17,8 +17,25 @@
   <body>
     <header class="jumbotron">
       <h1>Hello my name is...</h1>
-      <!-- <div class="container"> -->
-        <secton class="row text-center">
+      <div class="container">
+
+        <form>
+          <div class="form-group">
+            <label>Name:</label>
+            <input type="text" class="form-control" id="name">
+
+            <div class="panel panel-default">
+              <div class="panel-body">Don't worry...information is not stored</div>
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">Skip</button>
+            <button type="button" class="btn btn-success">Submit</button>
+          </div>
+        </form>
+
+        <section class="row text-center">
           <aside class="col-md-3">
             <div class="panel panel-default">
               <div class="panel-body">
@@ -51,50 +68,130 @@
             </div>
           </aside>
         </section>
-      <!-- </div> -->
+      </div>
     </header>
 
     <section class="container">
       <article class="row">
-        <header>
+        <header class="col-md-12">
           <h1>About Me</h1>
           <span class="label label-default">HK</span>
           <span class="label label-default">Toronto</span>
         </header>
 
-        <p>I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto</p>
-        <aside>Random Fact:</aside>
+        <p class="col-md-9">I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. Having grown up in HK for most of my life, I moved to Toronto to attend university</p>
+        <aside class="col-md-9-offset col-md-3 panel panel-default">
+          <div class="panel-body">
+
+          <h2><small>Random Fact:</small></h2>
+          <p>Despite graduating with an Electrical Engineering, I like to try and be in between hardware and software</p>
+          </div>
+        </aside>
       </article>
 
       <article class="row">
-        <header>
+        <header class="col-md-12">
           <h1>Education</h1>
           <span class="label label-default">BASc | University of Toronto</span>
         </header>
 
-        <p>I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. My interests are power and analog electronics. My 4th Year Capstone Project was designing a USB C Wall Charger utilizing Gallium Nitride (GaN) transistors</p>
+        <p class="col-md-12">I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. My interests are power and analog electronics. My 4th Year Capstone Project was designing a USB C Wall Charger utilizing Gallium Nitride (GaN) transistors</p>
+
+        <div class="col-md-12">
+
+          <h3>Courses</h3>
+          <div class="col-md-2"></div>
+
+          <aside class="col-md-4 panel panel-default">
+            <div class="panel-body">
+
+            <h2><small>Electrical</small></h2>
+            <p>Building cool and interactive displays around campus with an Arduino, really.</p>
+            </div>
+          </aside>
+
+          <aside class="col-md-4 panel panel-default">
+            <div class="panel-body">
+
+            <h2><small>Software</small></h2>
+            <p>Developing new features on the website to increase functionality and cater for undegraduate students at UofT.</p>
+            </div>
+          </aside>
+
+        </div>
+
       </article class="row">
 
       <article class="row">
-        <header>
+        <header class="col-md-12">
           <h1>Projects/Volunteer</h1>
           <span class="label label-default">You're Next Career Network</span>
           <span class="label label-default">Spark Design Club</span>
         </header>
-        <p>I like to work on both hardware & software projects.</p>
+        <p class="col-md-12">I like to work on both hardware & software projects.</p>
 
-        <p>Check out my Github account for more info!
+        <div class="col-md-12">
+
+          <div class="col-md-2"></div>
+
+          <aside class="col-md-4 panel panel-default">
+            <div class="panel-body">
+
+            <h2><small>Spark Design Club</small></h2>
+            <p>Building cool and interactive displays around campus with an Arduino, really.</p>
+            <p><a class="btn btn-primary btn-lg" href="http://  spark.skule.ca" role="button">Spark Design Club</a></p>
+            </div>
+          </aside>
+
+          <aside class="col-md-4 panel panel-default">
+            <div class="panel-body">
+
+            <h2><small>You're Next Career Network</small></h2>
+            <p>Developing new features on the website to increase functionality and cater for undegraduate students at UofT.</p>
+            <p><a class="btn btn-primary btn-lg" href="http://yourenext.ca" role="button">You're Next Career Network</a></p>
+            </div>
+          </aside>
+
+        </div>
+
+        <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+
+          <!-- Navigator -->
+          <ol class="carousel-indicators">
+            <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#projectCarousel" data-slide-to="1"></li>
+            <li data-target="#projectCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!--  Content -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <p>Hello</p>
+            </div>
+
+            <div class="item">
+              <p>Hello 2</p>
+            </div>
+
+            <div class="item">
+              <p>Hello 3</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="col-md-12">Check out my Github account for more info!
       </article>
 
       <article class="row">
-        <header>
+        <header class="col-md-12">
           <h1>Resume</h1>
           <span class="label label-default">AdParlor</span>
           <span class="label label-default">D2L</span>
           <span class="label label-default">University of Toronto</span>
         </header>
 
-        <p>Click here to access my resume!</p>
+        <p class="col-md-12">Click here to access my resume!</p>
       </article>
     </section>
 
