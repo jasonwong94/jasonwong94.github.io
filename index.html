@@ -5,16 +5,38 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
     <!--  Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <header class="navbar-header">
+          <a class="navbar-brand" href="#">Jason Wong</a>
+        </header>
+        <section>
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a>Github</a></li>
+            <li><a>LinkedIn</a></li>
+          </ul>
+        </section>
+      </div>
+
+    </nav>
+
+    <!-- Interactive stuff -->
     <header class="jumbotron">
       <div class="container">
         <h1>Hello my name is...</h1>
@@ -71,7 +93,7 @@
     </header>
 
     <section class="container">
-      <article>
+      <article id="about">
         <header>
           <h1>About Me</h1>
           <span class="label label-default">HK</span>
@@ -97,7 +119,7 @@
         </div>
       </article>
 
-      <article>
+      <article id="education">
         <header>
           <h1>Education</h1>
           <span class="label label-default">BASc | University of Toronto</span>
@@ -138,7 +160,7 @@
         </div>
       </article>
 
-      <article>
+      <article id="projects">
         <header>
           <h1>Projects/Volunteer</h1>
           <span class="label label-default">You're Next Career Network</span>
@@ -200,7 +222,7 @@
         <p class="col-md-12">Check out my Github account for more info!
       </article>
 
-      <article>
+      <article id="resume">
         <header>
           <h1>Resume</h1>
           <span class="label label-default">AdParlor</span>
