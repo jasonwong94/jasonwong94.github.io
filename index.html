@@ -16,16 +16,15 @@
   </head>
   <body>
     <header class="jumbotron">
-      <h1>Hello my name is...</h1>
       <div class="container">
-
+        <h1>Hello my name is...</h1>
         <form>
           <div class="form-group">
             <label>Name:</label>
-            <input type="text" class="form-control" id="name">
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
 
             <div class="panel panel-default">
-              <div class="panel-body">Don't worry...information is not stored</div>
+              <div class="panel-body">Don't worry...information is not stored. Don't like the interactivity? That's ok</div>
             </div>
           </div>
 
@@ -72,41 +71,56 @@
     </header>
 
     <section class="container">
-      <article class="row">
-        <header class="col-md-12">
+      <article>
+        <header>
           <h1>About Me</h1>
           <span class="label label-default">HK</span>
           <span class="label label-default">Toronto</span>
         </header>
 
-        <p class="col-md-9">I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. Having grown up in HK for most of my life, I moved to Toronto to attend university</p>
-        <aside class="col-md-9-offset col-md-3 panel panel-default">
-          <div class="panel-body">
+        <h2>Howdy!</h2>
+        <p>Welcome to my website! After having done some web development, it's about time I put up my personal website. There's more than just me about being a developer. I am an engineer. An electrical engineer who is interested in designing analog and power circuits on the <a href="https://en.wikipedia.org/wiki/Flyback_converter">fly(back)</a>.</p>
 
-          <h2><small>Random Fact:</small></h2>
-          <p>Despite graduating with an Electrical Engineering, I like to try and be in between hardware and software</p>
-          </div>
-        </aside>
+        <p>Currently I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. Having grown up in HK for most of my life, I moved to Toronto to attend university.</p>
+
+        <div class="row">
+          <p class="col-md-9">One of my passion is playing hockey. To this date yet...I haven't been to a Maple Leafs game (although I went to watch the World Cup of Hockey after my friend got some very last-minute tickets for a decent deal)</p>
+          <aside class="col-md-9-offset col-md-3 panel panel-default">
+            <div class="panel-body">
+
+            <h2><small>Random Fact:</small></h2>
+            <p>When I lived in Toronto, I commuted back and forth to Waterloo to play hockey. The hockey part was fun...not so much for the commute</p>
+            </div>
+          </aside>
+
+          <p class="col-md-9">I am currently looking for a job...hopefully by the time this website is out, I have something aligned. Fingers crossed!</p>
+        </div>
       </article>
 
-      <article class="row">
-        <header class="col-md-12">
+      <article>
+        <header>
           <h1>Education</h1>
           <span class="label label-default">BASc | University of Toronto</span>
         </header>
 
-        <p class="col-md-12">I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. My interests are power and analog electronics. My 4th Year Capstone Project was designing a USB C Wall Charger utilizing Gallium Nitride (GaN) transistors</p>
+        <p>I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. My interests are power and analog electronics. My 4th Year Capstone Project was designing a USB C Wall Charger utilizing Gallium Nitride (GaN) transistors</p>
 
-        <div class="col-md-12">
+        <p>As mentioned my interest is in power and analog electronics. During my free time, I like to read and understand power electronics from topologies such as quasi-resonant flyback, resonant to understanding how feedback circuits work.</p>
 
-          <h3>Courses</h3>
+        <h3>Courses</h3>
+        <div class="row">
           <div class="col-md-2"></div>
 
           <aside class="col-md-4 panel panel-default">
             <div class="panel-body">
 
             <h2><small>Electrical</small></h2>
-            <p>Building cool and interactive displays around campus with an Arduino, really.</p>
+            <ul>
+              <li>Digital Logic and Electronics</li>
+              <li>Analog Electronics</li>
+              <li>Mixed Analog Signal Circuits</li>
+              <li>Power Electronics</li>
+            </ul>
             </div>
           </aside>
 
@@ -114,32 +128,34 @@
             <div class="panel-body">
 
             <h2><small>Software</small></h2>
-            <p>Developing new features on the website to increase functionality and cater for undegraduate students at UofT.</p>
+            <ul>
+              <li>Networks</li>
+              <li>Operating Systems</li>
+            </ul>
             </div>
           </aside>
 
         </div>
+      </article>
 
-      </article class="row">
-
-      <article class="row">
-        <header class="col-md-12">
+      <article>
+        <header>
           <h1>Projects/Volunteer</h1>
           <span class="label label-default">You're Next Career Network</span>
           <span class="label label-default">Spark Design Club</span>
         </header>
-        <p class="col-md-12">I like to work on both hardware & software projects.</p>
+        <p>I like to work on both hardware & software projects.</p>
 
-        <div class="col-md-12">
-
+        <div class="row">
           <div class="col-md-2"></div>
 
           <aside class="col-md-4 panel panel-default">
             <div class="panel-body">
 
             <h2><small>Spark Design Club</small></h2>
+            <span class="label label-default">Co-President</span><span class="label label-default">Web & Finance</span>
             <p>Building cool and interactive displays around campus with an Arduino, really.</p>
-            <p><a class="btn btn-primary btn-lg" href="http://  spark.skule.ca" role="button">Spark Design Club</a></p>
+            <p><a class="btn btn-primary btn-lg" href="http://spark.skule.ca" role="button">Spark Design Club</a></p>
             </div>
           </aside>
 
@@ -147,6 +163,7 @@
             <div class="panel-body">
 
             <h2><small>You're Next Career Network</small></h2>
+            <span class="label label-default">Developer</span>
             <p>Developing new features on the website to increase functionality and cater for undegraduate students at UofT.</p>
             <p><a class="btn btn-primary btn-lg" href="http://yourenext.ca" role="button">You're Next Career Network</a></p>
             </div>
@@ -183,15 +200,15 @@
         <p class="col-md-12">Check out my Github account for more info!
       </article>
 
-      <article class="row">
-        <header class="col-md-12">
+      <article>
+        <header>
           <h1>Resume</h1>
           <span class="label label-default">AdParlor</span>
           <span class="label label-default">D2L</span>
           <span class="label label-default">University of Toronto</span>
         </header>
 
-        <p class="col-md-12">Click here to access my resume!</p>
+        <p>Click here to access my resume!</p>
       </article>
     </section>
 
