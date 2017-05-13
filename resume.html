@@ -11,8 +11,48 @@
 	    <!-- Latest compiled and minified JavaScript -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	    <!-- Angular JS -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	</head>
 	<body>
-		<h1>My Resume</h1>
+		<!-- Contains "interactive" feature to select info about Resume -->
+		<header class="container-fluid">
+			<h1>My Resume</h1>
+			<div class="well well-lg">
+				<section id="interactive">
+					<h3>Filter</h3>
+					<button type="button" class="btn btn-success">Hardware</button>
+					<button type="button" class="btn btn-success">Software</button>
+				</section>
+
+				<section id="downloads">
+					<h3>Download</h3>
+					<button type="button" class="btn btn-info"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Hardware</button>
+					<button type="button" class="btn btn-info"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Software</button>
+				</section>
+			</div>
+		</header>
+		<!-- Prints out the good stuff -->
+		<article class="container-fluid">
+			<section id="experience">
+				<h3>Experience</h3>
+				<div class="well"></div>
+			</section>
+			<section id="skills">
+				<h3>Skills</h3>
+				<div class="well"></div>
+			</section>
+			<section id="projects">
+				<h3>Projects</h3>
+				<div class="well"></div>
+			</section>
+		</article>
+
+		<!-- ??? -->
+		<footer class="container-fluid">
+			
+		</footer>
+
 	</body>
 </html>
