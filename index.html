@@ -11,13 +11,17 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Custom stylesheets & Scripts -->
+    <link rel="stylesheet" href="./src/main.css">
+    <script src="./src/script.js"></script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
       <div class="container-fluid">
         <header class="navbar-header">
-          <a class="navbar-brand" href="#">Jason Wong</a>
+          <a class="navbar-brand" href="#" id="openDialog">Jason Wong</a>
         </header>
         <section>
           <ul class="nav navbar-nav">
@@ -28,8 +32,9 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a>Github</a></li>
-            <li><a>LinkedIn</a></li>
+            <li><a href="https://www.github.com/jasonwong94/"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jasonwong94/"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+            <li><a><i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i></a></li>
           </ul>
         </section>
       </div>
@@ -37,21 +42,22 @@
     </nav>
 
     <!-- Interactive stuff -->
-    <header class="jumbotron">
+    <header class="jumbotron" id="interactiveStart">
       <div class="container">
+        <span id="closeDialog"><a href="#">&#10006;</a></span>
         <h1>Hello my name is...</h1>
         <form>
           <div class="form-group">
             <label>Name:</label>
             <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
 
-            <div class="panel panel-default">
-              <div class="panel-body">Don't worry...information is not stored. Don't like the interactivity? That's ok</div>
-            </div>
+          <div class="panel panel-info">
+            <div class="panel-heading">Don't worry...information is not stored. Don't like the interactivity? That's ok</div>
           </div>
 
           <div class="btn-group">
-            <button type="button" class="btn btn-default">Skip</button>
+            <button type="button" class="btn btn-default" id="skip">Skip</button>
             <button type="button" class="btn btn-success">Submit</button>
           </div>
         </form>
@@ -92,7 +98,7 @@
       </div>
     </header>
 
-    <section class="container">
+    <section class="container" id="content">
       <article id="about">
         <header>
           <h1>About Me</h1>
@@ -193,30 +199,12 @@
 
         </div>
 
-        <div id="projectCarousel" class="carousel slide" data-ride="carousel">
-
-          <!-- Navigator -->
-          <ol class="carousel-indicators">
-            <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#projectCarousel" data-slide-to="1"></li>
-            <li data-target="#projectCarousel" data-slide-to="2"></li>
-          </ol>
-
-          <!--  Content -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <p>Hello</p>
-            </div>
-
-            <div class="item">
-              <p>Hello 2</p>
-            </div>
-
-            <div class="item">
-              <p>Hello 3</p>
-            </div>
-          </div>
-
+        <div class="row">
+          <div class="panel panel-default col-md-3"></div>
+          <div class="panel panel-default col-md-3"></div>
+          <div class="panel panel-default col-md-3"></div>
+          <div class="panel panel-default col-md-3"></div>
+          <div class="panel panel-default col-md-3"></div>
         </div>
 
         <p class="col-md-12">Check out my Github account for more info!

@@ -1,0 +1,16 @@
+#interactiveStart{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.closeDialog{
+  positon: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+article{
+  padding-top: 75px;
+}
