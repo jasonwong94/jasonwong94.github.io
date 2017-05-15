@@ -16,7 +16,7 @@
 	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	    <script src="./src/resume.js"></script>
 	</head>
-	<body ng-controller="resumeController">
+	<body ng-controller="resumeController as ctrl">
 		<!-- Contains "interactive" feature to select info about Resume -->
 		<header class="container-fluid">
 			<h1>My Resume</h1>
@@ -35,32 +35,57 @@
 			</div>
 		</header>
 		<!-- Prints out the good stuff -->
-		<article class="container-fluid">
-			<section id="education">
+		<article class="container-fluid row">
+			<section id="education" class="col-md-12">
 				<h3>Education</h3>
 				<div class="well">
-					<div ng-repeat="education in content.resume.education">
-						{{ education.title }}
+					<div ng-repeat="(education, value) in ctrl.resume.education">
+						<h4>{{ value.title }}</h4>
+						<h4>{{ value.major }}</h4>
 					</div>
 				</div>
 			</section>
-			<section id="experience">
+
+			<section id="experience" class="col-md-9">
 				<h3>Experience</h3>
-				<div class="well"></div>
+				<div class="well">
+					<div ng-repeat="(experience, value) in ctrl.resume.experience" class="panel panel-default">
+						<div class="panel-heading">
+							<h4>{{ value.title }} <small> {{ value.company}}</small> <span class="text-primary"> {{ value.duration[0] }} - {{ value.duration[1] }}</span> </h4>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li ng-repeat="keypoint in value.keypoints">{{ keypoint }}</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</section>
-			<section id="skills">
+
+			<section id="skills" class="col-md-3">
 				<h3>Skills</h3>
-				<div class="well"></div>
+				<div class="well">
+					<div ng-repeat="(skill, value) in ctrl.resume.skills" class="panel panel-default">
+						<div class="panel-heading">
+							<h4>{{ value.title }}</h4>
+						</div>
+						<div class="panel-body">
+							<span ng-repeat="item in value.keypoints" class="label label-default"> {{ item }}</span>
+						</div>
+					</div>
+				</div>
 			</section>
-			<section id="projects">
+
+			<section id="projects" class="col-md-12">
 				<h3>Projects</h3>
 				<div class="well"></div>
 			</section>
+
 		</article>
 
 		<!-- ??? -->
 		<footer class="container-fluid">
-			
+
 		</footer>
 
 	</body>
