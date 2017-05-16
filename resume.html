@@ -3,35 +3,40 @@
 		<title>Jason Wong | Resume </title>
 
 		 <!-- Latest compiled and minified CSS -->
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	    <!--  Font Awesome-->
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	    <!-- Latest compiled and minified JavaScript -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	    <!-- Angular JS -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-	    <script src="./src/resume.js"></script>
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="./src/resume.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	</head>
 	<body ng-controller="resumeController as ctrl">
 		<!-- Contains "interactive" feature to select info about Resume -->
 		<header class="container-fluid">
-			<h1>My Resume</h1>
-			<div class="well well-lg">
-				<section id="interactive">
-					<h3>Filter</h3>
-					<button type="button" class="btn btn-success">Hardware</button>
-					<button type="button" class="btn btn-success">Software</button>
-				</section>
+			<h1>Jason Wong | My Resume</h1>
+			<div class="well well-md">
+				<article class="row">
+					<section id="interactive" class="col-md-8">
+						<h3>Filter</h3>
+						<button type="button" class="btn btn-success">Hardware</button>
+						<button type="button" class="btn btn-success">Software</button>
+					</section>
 
-				<section id="downloads">
-					<h3>Download</h3>
-					<button type="button" class="btn btn-info"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Hardware</button>
-					<button type="button" class="btn btn-info"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Software</button>
-				</section>
+					<section id="downloads" class="col-md-4">
+						<h3>Download</h3>
+						<a class="btn btn-info" href="./src/static/Jason_Wong_resume_hardware.pdf"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Hardware</a>
+						<a class="btn btn-info" href="./src/static/Jason_Wong_resume_software.pdf"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Software</a>
+						<a class="btn btn-info disabled" href="#"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Json Format</a>
+					</section>
+				</article>
 			</div>
 		</header>
 		<!-- Prints out the good stuff -->
