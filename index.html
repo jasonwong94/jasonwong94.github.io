@@ -18,6 +18,8 @@
     <!-- Custom stylesheets & Scripts -->
     <link rel="stylesheet" href="./src/main.css">
     <script src="./src/index.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50" ng-controller="mainPageController as ctrl">
     <!-- Navbar -->
@@ -37,7 +39,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="https://www.github.com/jasonwong94/"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
             <li><a href="https://www.linkedin.com/in/jasonwong94/"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-            <li><a><i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="./resume.html"><i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i></a></li>
           </ul>
         </section>
       </div>
@@ -51,7 +53,7 @@
         <h1>Hello my name is...</h1>
         <form>
           <div ng-class="{'form-group':!ctrl.name, 'input-group':ctrl.name}">
-            <input type="text" class="form-control" id="name" placeholder="Your Name" ng-model="ctrl.name">
+            <input type="text" class="form-control" id="name" placeholder="Your Name" ng-model="ctrl.name" autocomplete="off">
             <div class="input-group-btn" ng-show="ctrl.name">
               <button class="btn btn-danger" ng-click="ctrl.resetName()">X</button>
             </div>
@@ -61,9 +63,11 @@
             <div class="panel-heading">Don't worry...information is not stored. Don't like the interactivity? That's ok</div>
           </div>
 
-          <div class="btn-group">
-            <button type="button" class="btn btn-default" id="skip" ng-click="ctrl.togglePane()">Skip</button>
-            <button type="button" class="btn btn-success" ng-click="ctrl.submit()">Submit</button>
+          <div class="text-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default" id="skip" ng-click="ctrl.togglePane()">Skip</button>
+              <button type="button" class="btn btn-success" ng-click="ctrl.submit()">Submit</button>
+            </div>
           </div>
         </form>
 
@@ -189,7 +193,7 @@
             <h2><small>Spark Design Club</small></h2>
             <span class="label label-default">Co-President</span><span class="label label-default">Web & Finance</span>
             <p>Building cool and interactive displays around campus with an Arduino, really.</p>
-            <p><a class="btn btn-primary btn-lg" href="http://spark.skule.ca" role="button">Spark Design Club</a></p>
+            <p class="text-center"><a class="btn btn-primary btn-lg" href="http://spark.skule.ca" role="button">Spark Design Club</a></p>
             </div>
           </aside>
 
@@ -199,7 +203,7 @@
             <h2><small>You're Next Career Network</small></h2>
             <span class="label label-default">Developer</span>
             <p>Developing new features on the website to increase functionality and cater for undegraduate students at UofT.</p>
-            <p><a class="btn btn-primary btn-lg" href="http://yourenext.ca" role="button">You're Next Career Network</a></p>
+            <p class="text-center"><a class="btn btn-primary btn-lg" href="http://yourenext.ca" role="button">You're Next Career Network</a></p>
             </div>
           </aside>
 
@@ -222,6 +226,8 @@
           <span class="label label-default">AdParlor</span>
           <span class="label label-default">D2L</span>
           <span class="label label-default">University of Toronto</span>
+
+          <p class="text-center"><a class="btn btn-info btn-lg" href="./resume.html" role="button">Resume</a></p>
         </header>
 
         <p>Click here to access my resume!</p>
