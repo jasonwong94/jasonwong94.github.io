@@ -53,15 +53,18 @@ var resume = {
 	"skills": [
 		{
 			"title": "Web Development",
-			"keypoints": ["HTML", "Javascript", "CSS"],
+			"keypoints": ["HTML", "Javascript", "CSS", "MongoDB"],
+			"description": "Experience with various JS frameworks- AngularJS, Marionette/Backbone. I have played around with NodeJS and libraries such as Karma, SaSS and Gulp"
 		},
 		{
 			"title": "Embedded Systems",
-			"keypoints": ["Arduino", "Raspberry Pi", "Altera FPGA"]
+			"keypoints": ["Arduino", "Raspberry Pi", "Altera FPGA"],
+			"description": "Worked with Arduino during Spark to integrate electrical and mechanical components. In addition, I have worked with FPGAs for digital systems courses",
 		},
 		{
 			"title": "Analyitcal",
-			"keypoints": ["LTspice", "MATLAB", "PLECS"]
+			"keypoints": ["LTspice", "MATLAB", "PLECS"],
+			"description": "Utilized MATLAB for controls courses as well for analog circuits courses for feedback design"
 		}
 	]
 }
