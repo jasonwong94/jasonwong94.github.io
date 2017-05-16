@@ -1,4 +1,4 @@
-<html>
+<html ng-app="jasonwong94-mainpage">
   <head>
     <title>Jason Wong</title>
 
@@ -12,16 +12,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
     <!-- Custom stylesheets & Scripts -->
     <link rel="stylesheet" href="./src/main.css">
-    <script src="./src/script.js"></script>
+    <script src="./src/index.js"></script>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" ng-controller="mainPageController as ctrl">
     <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar" ng-hide="ctrl.isDialogOpen">
       <div class="container-fluid">
         <header class="navbar-header">
-          <a class="navbar-brand" href="#" id="openDialog">Jason Wong</a>
+          <a class="navbar-brand" href="#" id="openDialog" ng-click="ctrl.togglePane()">Jason Wong</a>
         </header>
         <section>
           <ul class="nav navbar-nav">
@@ -42,14 +45,16 @@
     </nav>
 
     <!-- Interactive stuff -->
-    <header class="jumbotron" id="interactiveStart">
+    <header class="jumbotron" id="interactiveStart" ng-hide="!ctrl.isDialogOpen">
       <div class="container">
-        <span id="closeDialog"><a href="#">&#10006;</a></span>
+        <span id="closeDialog"><a href="#" ng-click="ctrl.togglePane()">X</a></span>
         <h1>Hello my name is...</h1>
         <form>
-          <div class="form-group">
-            <label>Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          <div ng-class="{'form-group':!ctrl.name, 'input-group':ctrl.name}">
+            <input type="text" class="form-control" id="name" placeholder="Your Name" ng-model="ctrl.name">
+            <div class="input-group-btn" ng-show="ctrl.name">
+              <button class="btn btn-danger" ng-click="ctrl.resetName()">X</button>
+            </div>
           </div>
 
           <div class="panel panel-info">
@@ -57,8 +62,8 @@
           </div>
 
           <div class="btn-group">
-            <button type="button" class="btn btn-default" id="skip">Skip</button>
-            <button type="button" class="btn btn-success">Submit</button>
+            <button type="button" class="btn btn-default" id="skip" ng-click="ctrl.togglePane()">Skip</button>
+            <button type="button" class="btn btn-success" ng-click="ctrl.submit()">Submit</button>
           </div>
         </form>
 
@@ -98,7 +103,8 @@
       </div>
     </header>
 
-    <section class="container" id="content">
+    <!-- Content Stuff -->
+    <section class="container" id="content" ng-hide="ctrl.isDialogOpen">
       <article id="about">
         <header>
           <h1>About Me</h1>
@@ -106,7 +112,7 @@
           <span class="label label-default">Toronto</span>
         </header>
 
-        <h2>Howdy!</h2>
+        <h2>Howdy {{ctrl.name}}!</h2>
         <p>Welcome to my website! After having done some web development, it's about time I put up my personal website. There's more than just me about being a developer. I am an engineer. An electrical engineer who is interested in designing analog and power circuits on the <a href="https://en.wikipedia.org/wiki/Flyback_converter">fly(back)</a>.</p>
 
         <p>Currently I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. Having grown up in HK for most of my life, I moved to Toronto to attend university.</p>
