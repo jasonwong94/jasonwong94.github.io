@@ -1,0 +1,61 @@
+@import "colours.scss";
+
+body{
+  background-color: $gray-smoke;
+}
+
+#customStyle{
+
+  .navbar{
+    background-color: $blue-stormy;
+
+    &.navbar a{
+      color: $blue-estatic;
+    }
+
+    &.navbar .navbar-right a{
+      color: $yellow-gatorade;
+    }
+  }
+
+  h1{
+    color: $green-pepper;
+  }
+
+  .label-default{
+    background-color: $green-apple;
+  }
+
+  #interactiveStart{
+    background-color: $blue-stormy;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    & h1{
+      color: $blue-estatic;
+      font-weight: lighter;
+    }
+
+    & .btn-success{
+      background-color: $green-lime;
+    }
+  }
+
+  .closeDialog{
+    positon: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  .btn-primary{
+    background-color: $blue-stormy;
+    color: $blue-estatic;
+  }
+
+  article{
+    padding-top: 75px;
+  }
+
+}

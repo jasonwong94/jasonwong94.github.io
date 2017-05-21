@@ -16,12 +16,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
     <!-- Custom stylesheets & Scripts -->
-    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src/static/css/main.css">
     <script src="./src/index.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50" ng-controller="mainPageController as ctrl">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" ng-controller="mainPageController as ctrl" id="customStyle">
     <!-- Navbar -->
     <nav class="navbar navbar-default navbar-fixed-top" id="navbar" ng-hide="ctrl.isDialogOpen">
       <div class="container-fluid">
@@ -117,12 +117,15 @@
         </header>
 
         <h2>Howdy {{ctrl.name}}!</h2>
-        <p>Welcome to my website! After having done some web development, it's about time I put up my personal website. There's more than just me about being a developer. I am an engineer. An electrical engineer who is interested in designing analog and power circuits on the <a href="https://en.wikipedia.org/wiki/Flyback_converter">fly(back)</a>.</p>
-
-        <p>Currently I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. Having grown up in HK for most of my life, I moved to Toronto to attend university.</p>
-
         <div class="row">
-          <p class="col-md-9">One of my passion is playing hockey. To this date yet...I haven't been to a Maple Leafs game (although I went to watch the World Cup of Hockey after my friend got some very last-minute tickets for a decent deal)</p>
+          <div class="col-md-9">
+          <p>Welcome to my website! After having done some web development, it's about time I put up my personal website. There's more than just me about being a developer. I am an engineer. An electrical engineer who is interested in designing analog and power circuits on the <a href="https://en.wikipedia.org/wiki/Flyback_converter">fly(back)</a>. At the same time I am also interested in enhancing my development skills outside of class. While I am graduating with an electrical degree, I like to be a "well-rounded" engineer; balancing between hardware and software side.</p>
+
+          <p>Currently I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. Having grown up in HK for most of my life, I moved to Toronto to attend university.</p>
+
+
+          <p>One of my passion is playing hockey. To this date yet...I haven't been to a Maple Leafs game (although I went to watch the World Cup of Hockey after my friend got some very last-minute tickets for a decent deal)</p>
+          </div>
           <aside class="col-md-9-offset col-md-3 panel panel-default">
             <div class="panel-body">
 

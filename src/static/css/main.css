@@ -1,0 +1,35 @@
+body {
+  background-color: #f0f8f9; }
+
+#customStyle .navbar {
+  background-color: #013335; }
+  #customStyle .navbar.navbar a {
+    color: #01ECF7; }
+  #customStyle .navbar.navbar .navbar-right a {
+    color: #C8FE00; }
+#customStyle h1 {
+  color: #29A10A; }
+#customStyle .label-default {
+  background-color: #2DDA00; }
+#customStyle #interactiveStart {
+  background-color: #013335;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+  #customStyle #interactiveStart h1 {
+    color: #01ECF7;
+    font-weight: lighter; }
+  #customStyle #interactiveStart .btn-success {
+    background-color: #52d031; }
+#customStyle .closeDialog {
+  positon: absolute;
+  top: 5px;
+  right: 5px; }
+#customStyle .btn-primary {
+  background-color: #013335;
+  color: #01ECF7; }
+#customStyle article {
+  padding-top: 75px; }
+
+/*# sourceMappingURL=main.css.map */
