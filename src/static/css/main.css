@@ -1,16 +1,26 @@
-body {
-  background-color: #f0f8f9; }
-
 #customStyle .navbar {
   background-color: #013335; }
   #customStyle .navbar.navbar a {
     color: #01ECF7; }
+  #customStyle .navbar li.active > a {
+    background-color: #025d61;
+    color: white; }
   #customStyle .navbar.navbar .navbar-right a {
     color: #C8FE00; }
 #customStyle h1 {
+  color: #025d61; }
+#customStyle h2 > small {
   color: #29A10A; }
+#customStyle .panel-default {
+  border-color: #29A10A;
+  background-color: #f6fff6; }
+  #customStyle .panel-default .label-default {
+    background-color: #23bb59; }
+  #customStyle .panel-default .btn-success {
+    background-color: #20422c;
+    color: #30E600; }
 #customStyle .label-default {
-  background-color: #2DDA00; }
+  background-color: #01b4de; }
 #customStyle #interactiveStart {
   background-color: #013335;
   position: fixed;
@@ -21,7 +31,7 @@ body {
     color: #01ECF7;
     font-weight: lighter; }
   #customStyle #interactiveStart .btn-success {
-    background-color: #52d031; }
+    background-color: #23bb59; }
 #customStyle .closeDialog {
   positon: absolute;
   top: 5px;
@@ -29,7 +39,12 @@ body {
 #customStyle .btn-primary {
   background-color: #013335;
   color: #01ECF7; }
+#customStyle .name {
+  color: #29A10A; }
 #customStyle article {
   padding-top: 75px; }
+#customStyle footer {
+  margin: 0px;
+  background-color: #f0f8f9; }
 
 /*# sourceMappingURL=main.css.map */

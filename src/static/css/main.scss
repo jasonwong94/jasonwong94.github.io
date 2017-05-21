@@ -1,7 +1,7 @@
 @import "colours.scss";
 
 body{
-  background-color: $gray-smoke;
+
 }
 
 #customStyle{
@@ -13,17 +13,40 @@ body{
       color: $blue-estatic;
     }
 
+    & li.active > a{
+      background-color: $blue-dark-highlight;
+      color: white;
+    }
+
     &.navbar .navbar-right a{
       color: $yellow-gatorade;
     }
   }
 
   h1{
+    color: $blue-dark-highlight;
+  }
+
+  h2 > small{
     color: $green-pepper;
   }
 
+  .panel-default{
+    border-color: $green-pepper;
+    background-color: $green-light-mint;
+
+    .label-default{
+      background-color: $green-teal;
+    }
+
+    .btn-success{
+      background-color: $green-zuchinni;
+      color: $green-estatic;
+    }
+  }
+
   .label-default{
-    background-color: $green-apple;
+    background-color: $blue-sky;
   }
 
   #interactiveStart{
@@ -39,7 +62,7 @@ body{
     }
 
     & .btn-success{
-      background-color: $green-lime;
+      background-color: $green-teal;
     }
   }
 
@@ -54,8 +77,17 @@ body{
     color: $blue-estatic;
   }
 
+  .name{
+    color: $green-pepper;
+  }
+
   article{
     padding-top: 75px;
+  }
+
+  footer{
+    margin: 0px;
+    background-color: $gray-smoke;
   }
 
 }
