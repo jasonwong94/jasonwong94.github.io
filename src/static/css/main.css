@@ -1,3 +1,7 @@
+#customStyle p {
+  font-size: 1.25em;
+  font-weight: 200;
+  color: gray; }
 #customStyle .navbar {
   background-color: #013335; }
   #customStyle .navbar.navbar a {
@@ -8,7 +12,10 @@
   #customStyle .navbar.navbar .navbar-right a {
     color: #C8FE00; }
 #customStyle h1 {
-  color: #025d61; }
+  color: #025d61;
+  font-weight: 400; }
+#customStyle h2 {
+  font-weight: 200; }
 #customStyle h2 > small {
   color: #29A10A; }
 #customStyle .panel-default {
