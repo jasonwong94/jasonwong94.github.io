@@ -32,6 +32,15 @@
     font-weight: lighter; }
   #customStyle #interactiveStart .btn-success {
     background-color: #23bb59; }
+  #customStyle #interactiveStart #closeDialog {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: lightgray;
+    font-weight: lighter; }
+    #customStyle #interactiveStart #closeDialog:hover {
+      color: white; }
+  #customStyle #interactiveStart input:hover {
+    border: 2px solid #01b4de; }
 #customStyle .closeDialog {
   positon: absolute;
   top: 5px;

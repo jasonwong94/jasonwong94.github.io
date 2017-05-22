@@ -64,6 +64,25 @@ body{
     & .btn-success{
       background-color: $green-teal;
     }
+
+    #closeDialog{
+      font-size: 1.5em;
+      text-decoration: none;
+      color: lightgray;
+      font-weight: lighter;
+
+      &:hover{
+        color: white;
+      }
+    }
+
+    input{
+
+      &:hover{
+        border: 2px solid $blue-sky;
+      }
+    }
+
   }
 
   .closeDialog{
