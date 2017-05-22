@@ -121,12 +121,12 @@
           <span class="label label-default">Toronto</span>
         </header>
 
-        <h2>Howdy <span class="name">{{ctrl.name}}!</span></h2>
+        <h2>Howdy <span class="name">{{ctrl.name}}. Welcome to my website</span></h2>
         <div class="row">
           <div class="col-md-9">
-          <p>Welcome to my website! After having done some web development, it's about time I put up my personal website. There's more than just me about being a developer. I am an engineer. An electrical engineer who is interested in designing analog and power circuits on the <a href="https://en.wikipedia.org/wiki/Flyback_converter">fly(back)</a>. At the same time I am also interested in enhancing my development skills outside of class. While I am graduating with an electrical degree, I like to be a "well-rounded" engineer; balancing between hardware and software side.</p>
+          <p>After having done some web development, it's about time I put up my personal website. There's more than just me about being a developer. I am an electrical engineer interested in  analog and power circuits on the <a href="https://en.wikipedia.org/wiki/Flyback_converter">fly(back)</a></p>
 
-          <p>Currently I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. Having grown up in HK for most of my life, I moved to Toronto to attend university.</p>
+          <p>Having grown up in HK for most of my life, I moved to Toronto to attend university.</p>
 
 
           <p>One of my passion is playing hockey. To this date yet...I haven't been to a Maple Leafs game (although I went to watch the World Cup of Hockey after my friend got some very last-minute tickets for a decent deal)</p>
@@ -148,6 +148,7 @@
       <article id="education">
         <header>
           <h1>Education</h1>
+          <h2>Electrical Engineering</h2>
           <span class="label label-default">BASc | University of Toronto</span>
         </header>
 
@@ -192,11 +193,13 @@
       <article id="projects">
         <header>
           <h1>Projects/Volunteer</h1>
+          <h2>Web Development, Arduino</h2>
           <span class="label label-default">You're Next Career Network</span>
           <span class="label label-default">Spark Design Club</span>
         </header>
-        <p>I like to work on both hardware & software projects.</p>
+        <p>Despite receiveing an electrical degree, I like to be a "well-rounded" engineer; balancing between hardware and software side, gaining experience in both hardware & software projects.</p>
 
+        <p>Below are some of my involvement with clubs around the Skule community:</p>
         <div class="row">
           <div class="col-md-2"></div>
 
@@ -226,6 +229,7 @@
 
         </div>
 
+        <p>Here are some of my projects. Check out my Github account for more info!</p>
         <div class="row">
           <aside class="col-md-3" ng-repeat = "(key, project) in ctrl.projects">
             <div class="panel panel-default">
@@ -239,20 +243,34 @@
           </aside>
         </div>
 
-        <p class="col-md-12">Check out my Github account for more info!
       </article>
 
       <article id="resume">
         <header>
           <h1>Resume</h1>
+          <h2>Currently seeking hardware experience</h2>
+          <!-- Please hire me Texas Instruments, Analog Devices or ONSemi... or any awesome hardware company -->
           <span class="label label-default">AdParlor</span>
           <span class="label label-default">D2L</span>
           <span class="label label-default">University of Toronto</span>
 
+          <div class="row">
+            <aside class="col-md-4 col-md-offset-4">
+              <div class="panel panel-default">
+                <header class="panel-heading">
+                  AdParlor
+                </header>
+                <section class="panel-body">
+                  Investigated outstanding bugs. Fixed frontend bugs while relaying any backend bugs to backend developers. Development support for the latest AdMock product.
+                </section>
+
+              </div>
+            </aside>
+          </div>
+          <p class="text-center">Click below to access my resume!</p>
           <p class="text-center"><a class="btn btn-info btn-lg" href="./resume.html" role="button">Resume</a></p>
         </header>
 
-        <p>Click here to access my resume!</p>
       </article>
     </section>
 
@@ -261,13 +279,14 @@
     <footer class="jumbotron text-center">
       <p>Jason W</p>
       <div id="contact-icons">
-        <span class="contact-linkedin">
-          <a href="https://www.linkedin.com/in/jasonwong94/"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
-        </span>
         <span id="contact-github">
           <a href="https://github.com/jasonwong94"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
         </span>
+        <span class="contact-linkedin">
+          <a href="https://www.linkedin.com/in/jasonwong94/"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+        </span>
       </div>
+      <p><small>Designed with Bootstrap & Angular. Custom design</small></p>
     </footer>
   </body>
 </html>

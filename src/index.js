@@ -11,13 +11,9 @@ var projects = [{
   "tag": "Software",
   "description": "Designed and brought new features to the You're Next website. New features include events, jobs and resources. Developed with Python and jQuery"
 }, {
-  "title": "Android Development",
-  "tag": "Software",
-  "description": "Designing an Android App.."
-}, {
   "title": "Music Switchboard",
   "tag": "Embedded",
-  "description": ""
+  "description": "A giant array of tactile switches used to compose music. Measuring 4 feet by 3 feet, this enormous (and heavy!) display was programmed with an Arduino and Raspberry Pi. A MOSFET circuit was used to multiplex each column to read the values."
 }]
 
 angular.module("jasonwong94-mainpage", [])
