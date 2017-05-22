@@ -6,6 +6,12 @@ body{
 
 #customStyle{
 
+  p{
+    font-size: 1.25em;
+    font-weight: 200;
+    color: gray;
+  }
+
   .navbar{
     background-color: $blue-stormy;
 
@@ -25,6 +31,11 @@ body{
 
   h1{
     color: $blue-dark-highlight;
+    font-weight: 400;
+  }
+
+  h2{
+    font-weight: 200;
   }
 
   h2 > small{
@@ -64,6 +75,25 @@ body{
     & .btn-success{
       background-color: $green-teal;
     }
+
+    #closeDialog{
+      font-size: 1.5em;
+      text-decoration: none;
+      color: lightgray;
+      font-weight: lighter;
+
+      &:hover{
+        color: white;
+      }
+    }
+
+    input{
+
+      &:hover{
+        border: 2px solid $blue-sky;
+      }
+    }
+
   }
 
   .closeDialog{
