@@ -49,7 +49,7 @@
     <!-- Interactive stuff -->
     <header class="jumbotron" id="interactiveStart" ng-hide="!ctrl.isDialogOpen">
       <div class="container">
-        <span id="closeDialog"><a href="#" ng-click="ctrl.togglePane()">X</a></span>
+        <div class="text-right"><a href="#" ng-click="ctrl.togglePane()" id="closeDialog">X</a></div>
         <h1>Hello my name is...</h1>
         <form>
           <div ng-class="{'form-group':!ctrl.name, 'input-group':ctrl.name}">
