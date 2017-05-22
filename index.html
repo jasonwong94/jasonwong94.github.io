@@ -27,8 +27,13 @@
       <div class="container-fluid">
         <header class="navbar-header">
           <a class="navbar-brand" href="#" id="openDialog" ng-click="ctrl.togglePane()">Jason Wong</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </header>
-        <section>
+        <section class="collapse navbar-collapse" id="collapse-menu">
           <ul class="nav navbar-nav">
             <li><a href="#about">About Me</a></li>
             <li><a href="#education">Education</a></li>
@@ -126,11 +131,13 @@
 
           <p>One of my passion is playing hockey. To this date yet...I haven't been to a Maple Leafs game (although I went to watch the World Cup of Hockey after my friend got some very last-minute tickets for a decent deal)</p>
           </div>
-          <aside class="col-md-9-offset col-md-3 panel panel-default">
-            <div class="panel-body">
+          <aside class="col-md-9-offset col-md-3">
+            <div class="panel panel-default">
+              <div class="panel-body">
 
-            <h2><small>Random Fact:</small></h2>
-            <p>When I lived in Toronto, I commuted back and forth to Waterloo to play hockey. The hockey part was fun...not so much for the commute</p>
+              <h2><small>Random Fact:</small></h2>
+              <p>When I lived in Toronto, I commuted back and forth to Waterloo to play hockey. The hockey part was fun...not so much for the commute</p>
+              </div>
             </div>
           </aside>
 

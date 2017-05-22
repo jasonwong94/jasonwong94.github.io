@@ -65,6 +65,11 @@ var resume = {
 			"title": "Analyitcal",
 			"keypoints": ["LTspice", "MATLAB", "PLECS"],
 			"description": "Utilized MATLAB for controls courses as well for analog circuits courses for feedback design"
+		},
+		{
+			"title": "Things I'd Love to Learn",
+			"keypoints": ["Android/iOS Development", "Cadence"],
+			"description": "Just your average, ordinary everyday electrical engineer. Trying to learn something new and useful"
 		}
 	]
 }
