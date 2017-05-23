@@ -18,14 +18,25 @@
   font-weight: 200; }
 #customStyle h2 > small {
   color: #29A10A; }
-#customStyle .panel-default {
+#customStyle .panel-secondary {
   border-color: #29A10A;
   background-color: #f6fff6; }
-  #customStyle .panel-default .label-default {
+  #customStyle .panel-secondary h2 > small {
+    color: #29A10A; }
+  #customStyle .panel-secondary .panel-heading {
+    background-color: #f7f6f6; }
+  #customStyle .panel-secondary .label-default {
     background-color: #23bb59; }
-  #customStyle .panel-default .btn-success {
+  #customStyle .panel-secondary .btn-success {
     background-color: #20422c;
     color: #30E600; }
+#customStyle .panel-tertiary {
+  border-color: #b3c707;
+  background-color: #fffff6; }
+  #customStyle .panel-tertiary .panel-heading {
+    background-color: #f7f6f6; }
+  #customStyle .panel-tertiary h2 > small {
+    color: #b4b701; }
 #customStyle .label-default {
   background-color: #01b4de; }
 #customStyle #interactiveStart {

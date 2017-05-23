@@ -42,9 +42,17 @@ body{
     color: $green-pepper;
   }
 
-  .panel-default{
+  .panel-secondary{
     border-color: $green-pepper;
     background-color: $green-light-mint;
+
+    h2 > small{
+      color: $green-pepper;
+    }
+
+    .panel-heading{
+      background-color: $gray-cloud;
+    }
 
     .label-default{
       background-color: $green-teal;
@@ -53,6 +61,19 @@ body{
     .btn-success{
       background-color: $green-zuchinni;
       color: $green-estatic;
+    }
+  }
+
+  .panel-tertiary{
+    border-color: $yellow-dijon-mustard;
+    background-color: $yellow-light-mustard;
+
+    .panel-heading{
+      background-color: $gray-cloud;
+    }
+
+    h2 > small{
+      color: $yellow-mustard;
     }
   }
 

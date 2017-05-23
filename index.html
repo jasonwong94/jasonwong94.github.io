@@ -132,7 +132,7 @@
           <p>One of my passion is playing hockey. To this date yet...I haven't been to a Maple Leafs game (although I went to watch the World Cup of Hockey after my friend got some very last-minute tickets for a decent deal)</p>
           </div>
           <aside class="col-md-9-offset col-md-3">
-            <div class="panel panel-default">
+            <div class="panel panel-secondary">
               <div class="panel-body">
 
               <h2><small>Random Fact:</small></h2>
@@ -161,9 +161,11 @@
           <div class="col-md-2"></div>
 
           <aside class="col-md-4">
-            <div class="panel panel-default">
+            <div class="panel panel-secondary">
+              <header class="panel-heading">
+                  <h2><small>Electrical</small></h2>
+              </header>
               <div class="panel-body">
-              <h2><small>Electrical</small></h2>
               <ul>
                 <li>Digital Logic and Electronics</li>
                 <li>Analog Electronics</li>
@@ -175,10 +177,11 @@
           </aside>
 
           <aside class="col-md-4">
-            <div class="panel panel-default">
+            <div class="panel panel-secondary">
+              <header class="panel-heading">
+                  <h2><small>Software</small></h2>
+              </header>
               <div class="panel-body">
-
-              <h2><small>Software</small></h2>
               <ul>
                 <li>Networks</li>
                 <li>Operating Systems</li>
@@ -204,10 +207,11 @@
           <div class="col-md-2"></div>
 
           <aside class="col-md-4">
-            <div class="panel panel-default">
+            <div class="panel panel-secondary">
+              <header class="panel-heading">
+                  <h2><small>Spark Design Club</small></h2>
+              </header>
               <div class="panel-body">
-
-              <h2><small>Spark Design Club</small></h2>
               <span class="label label-default">Co-President</span><span class="label label-default">Web & Finance</span>
               <p>Building cool and interactive displays around campus with an Arduino, really.</p>
               <p class="text-center"><a class="btn btn-success btn-lg" href="http://spark.skule.ca" role="button">Spark Design Club</a></p>
@@ -216,10 +220,11 @@
           </aside>
 
           <aside class="col-md-4">
-            <div class="panel panel-default">
+            <div class="panel panel-secondary">
+              <header class="panel-heading">
+                  <h2><small>You're Next Career Network</small></h2>
+              </header>
               <div class="panel-body">
-
-              <h2><small>You're Next Career Network</small></h2>
               <span class="label label-default">Developer</span>
               <p>Developing new features on the website to increase functionality and cater for undegraduate students at UofT.</p>
               <p class="text-center"><a class="btn btn-success btn-lg" href="http://yourenext.ca" role="button">You're Next Career Network</a></p>
@@ -232,9 +237,11 @@
         <p>Here are some of my projects. Check out my Github account for more info!</p>
         <div class="row">
           <aside class="col-md-3" ng-repeat = "(key, project) in ctrl.projects">
-            <div class="panel panel-default">
-              <div class="panel-body">
+            <div class="panel panel-tertiary">
+              <header class="panel-heading">
                 <h2><small>{{project.title}}</small></h2>
+              </header>
+              <div class="panel-body">
                 <p>
                   {{project.description}}
                 </p>
