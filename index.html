@@ -55,28 +55,36 @@
     <header class="jumbotron" id="interactiveStart" ng-hide="!ctrl.isDialogOpen">
       <div class="container-fluid">
         <div class="text-right"><a href="#" ng-click="ctrl.togglePane()" id="closeDialog">X</a></div>
-        <h1>Hello my name is...</h1>
-        <form>
-          <div ng-class="{'form-group':!ctrl.name, 'input-group':ctrl.name}">
-            <input type="text" class="form-control" id="name" placeholder="Your Name" ng-model="ctrl.name" autocomplete="off">
-            <div class="input-group-btn" ng-show="ctrl.name">
-              <button class="btn btn-danger" ng-click="ctrl.resetName()">X</button>
+        <section ng-show="!ctrl.isSubmitted">
+          <h1>Hello my name is...</h1>
+          <form>
+            <div ng-class="{'form-group':!ctrl.name, 'input-group':ctrl.name}">
+              <input type="text" class="form-control input-lg" id="name" placeholder="Your Name" ng-model="ctrl.name" autocomplete="off">
+              <div class="input-group-btn" ng-show="ctrl.name">
+                <button class="btn btn-danger" ng-click="ctrl.resetName()">X</button>
+              </div>
             </div>
-          </div>
 
-          <div class="panel panel-info">
-            <div class="panel-heading">Don't worry...information is not stored. If you don't want to enter your name...close the dialog</div>
-          </div>
+            <div class="panel panel-info">
+              <div class="panel-heading">Don't worry...information is not stored. If you don't want to enter your name...close the dialog</div>
+            </div>
 
+            <div class="text-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default" id="skip" ng-click="ctrl.togglePane()">Skip</button>
+                <button type="button" class="btn btn-success" ng-click="ctrl.submit()">Submit</button>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <section class="row text-center" ng-show="ctrl.isSubmitted">
+          <h1> {{ctrl.greeting}} </h1>
+          <h2> {{ctrl.time}}</h2>
           <div class="text-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-default" id="skip" ng-click="ctrl.togglePane()">Skip</button>
-              <button type="button" class="btn btn-success" ng-click="ctrl.submit()">Submit</button>
-            </div>
+            <p>What may I interest you in today?</p>
+            <p>Click the buttons below to find out more about me.</p>
           </div>
-        </form>
-
-        <section class="row text-center">
           <aside class="col-md-3 col-sm-3">
             <a href="#about" ng-click="ctrl.togglePane()">
             <div class="panel panel-default">

@@ -49,6 +49,8 @@
   #customStyle #interactiveStart h1 {
     color: #01ECF7;
     font-weight: lighter; }
+  #customStyle #interactiveStart h2 {
+    color: white; }
   #customStyle #interactiveStart .btn-success {
     background-color: #23bb59; }
   #customStyle #interactiveStart a:visited, #customStyle #interactiveStart a:hover, #customStyle #interactiveStart a:focus, #customStyle #interactiveStart a:active {

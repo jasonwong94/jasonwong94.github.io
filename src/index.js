@@ -17,17 +17,22 @@ var projects = [{
 }]
 
 angular.module("jasonwong94-mainpage", [])
-  .controller('mainPageController', ["$http", "$scope", function($http, $scope){
+  .controller('mainPageController', ["$http", "$scope", "$interval", function($http, $scope, $interval){
       var content = this;
       content.isDialogOpen = true;
+      content.isSubmitted = false;
       content.name = undefined;
+      content.time = new Date().toLocaleTimeString();
       content.projects = projects;
 
       console.debug("Controller loaded!");
 
+      $interval(setTime, 1000);
+
       content.submit = function(){
         console.debug("Name submitted!");
-        this.togglePane();
+        content.isSubmitted = true;
+        content.greeting = setGreeting(content.name)
       }
 
       content.togglePane = function(){
@@ -36,6 +41,21 @@ angular.module("jasonwong94-mainpage", [])
 
       content.resetName = function(){
         content.name = undefined;
+        content.isSubmitted = false
+      }
+
+      function setTime(){
+        content.time = new Date().toLocaleTimeString();
+      }
+
+      function setGreeting(name){
+        var h = new Date().getHours();
+        if(h>=0 && h< 12)
+          return "Good Morning, " + name;
+        else if( h>=12 && h<=5 )
+          return "Good Afternoon, " + name;
+        else
+          return "Good Eveningm " + name;
       }
     }
   ])
