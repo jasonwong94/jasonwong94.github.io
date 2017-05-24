@@ -52,10 +52,10 @@ angular.module("jasonwong94-mainpage", [])
         var h = new Date().getHours();
         if(h>=0 && h< 12)
           return "Good Morning, " + name;
-        else if( h>=12 && h<=5 )
+        else if( h>=12 && h<=17 )
           return "Good Afternoon, " + name;
         else
-          return "Good Eveningm " + name;
+          return "Good Evening, " + name;
       }
     }
   ])
