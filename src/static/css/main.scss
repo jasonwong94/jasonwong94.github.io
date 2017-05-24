@@ -51,7 +51,7 @@ body{
     }
 
     .panel-heading{
-      background-color: $gray-cloud;
+      background-color: $green-mint;
     }
 
     .label-default{
@@ -69,7 +69,7 @@ body{
     background-color: $yellow-light-mustard;
 
     .panel-heading{
-      background-color: $gray-cloud;
+      background-color: $yellow-custard;
     }
 
     h2 > small{
@@ -87,6 +87,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: 2;
+    overflow-y: auto;
 
     & h1{
       color: $blue-estatic;
@@ -95,6 +96,18 @@ body{
 
     & .btn-success{
       background-color: $green-teal;
+    }
+
+    &:hover{
+
+    }
+
+    a:visited, a:hover, a:focus, a:active{
+      text-decoration: none;
+    }
+
+    .panel:hover, .panel:focus, .panel:active{
+      background-color: $gray-cloud;
     }
 
     #closeDialog{

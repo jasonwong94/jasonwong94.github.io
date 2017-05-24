@@ -24,7 +24,7 @@
   #customStyle .panel-secondary h2 > small {
     color: #29A10A; }
   #customStyle .panel-secondary .panel-heading {
-    background-color: #f7f6f6; }
+    background-color: #d8fde2; }
   #customStyle .panel-secondary .label-default {
     background-color: #23bb59; }
   #customStyle .panel-secondary .btn-success {
@@ -34,7 +34,7 @@
   border-color: #b3c707;
   background-color: #fffff6; }
   #customStyle .panel-tertiary .panel-heading {
-    background-color: #f7f6f6; }
+    background-color: #fcfdd8; }
   #customStyle .panel-tertiary h2 > small {
     color: #b4b701; }
 #customStyle .label-default {
@@ -44,12 +44,17 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 2; }
+  z-index: 2;
+  overflow-y: auto; }
   #customStyle #interactiveStart h1 {
     color: #01ECF7;
     font-weight: lighter; }
   #customStyle #interactiveStart .btn-success {
     background-color: #23bb59; }
+  #customStyle #interactiveStart a:visited, #customStyle #interactiveStart a:hover, #customStyle #interactiveStart a:focus, #customStyle #interactiveStart a:active {
+    text-decoration: none; }
+  #customStyle #interactiveStart .panel:hover, #customStyle #interactiveStart .panel:focus, #customStyle #interactiveStart .panel:active {
+    background-color: #f7f6f6; }
   #customStyle #interactiveStart #closeDialog {
     font-size: 1.5em;
     text-decoration: none;
