@@ -1,7 +1,5 @@
-/* Auto-generated file */
-/* Last Generated: 2017-06-22 01:52 */
 {
- 'green': ['green-estatic', 'green-lime', 'green-apple', 'green-pepper', 'green-light-mint', 'green-teal', 'green-zuchinni', 'green-mint'],
- ' blue': ['blue-estatic', 'blue-stormy', 'blue-night', 'blue-dark-highlight', 'blue-sky'],
- 'yellow': ['yellow-gatorade', 'yellow-light-mustard', 'yellow-dijon-mustard', 'yellow-mustard', 'yellow-custard'],
+ "green": ["green-estatic", "green-lime", "green-apple", "green-pepper", "green-light-mint", "green-teal", "green-zuchinni", "green-mint"],
+ "blue": ["blue-estatic", "blue-stormy", "blue-night", "blue-dark-highlight", "blue-sky"],
+ "yellow": ["yellow-gatorade", "yellow-light-mustard", "yellow-dijon-mustard", "yellow-mustard", "yellow-custard"]
 }
