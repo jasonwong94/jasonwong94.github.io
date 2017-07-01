@@ -1,13 +1,14 @@
 #this generates a colour scheme
 
 import time
+import json
 
 FILE_NAME_IN = 'colours.scss'
 FILE_NAME_OUT = 'colour-scheme.css'
 FILE_NAME_OUT_JSON = 'colour.json'
 
 PATTERN = ".%s {background-color: %s}\n"
-PATTERN_JSON = " \'%s\': %s,\n"
+PATTERN_JSON = " \"%s\": %s"
 
 file_out = open(FILE_NAME_OUT, 'w')
 file_out_json = open(FILE_NAME_OUT_JSON, 'w')
@@ -34,22 +35,28 @@ def generateCSSFile(file_out, file_in):
             generateCSS(line[0], line[1])
     print( "...Done. File created: %s" % (file_out))
 
-def generateJSONKey(key, value):
+def generateJSONKey(key, value, index):
     if key is not '':
-        file_out_json.write(PATTERN_JSON % (key, value))
+        if index > 1:
+            print index
+            file_out_json.write(',\n')
+        file_out_json.write(PATTERN_JSON % (key, json.dumps(value)) )
 
 def generateJSONfile(file_out, file_in):
-    generateHeader(file_out)
     file_out.write("{ \n")
 
     key = ''
     classArray = []
+    count = 0
 
     for line in file_in.readlines():
         line.strip('\n')
 
         if '//' in line:
-            generateJSONKey(key, classArray)
+            if classArray is not []:
+                generateJSONKey(key, classArray, count)
+                print count
+                count += 1
             classArray = []
             key = line.strip('//').strip('\n')
 

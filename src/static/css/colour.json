@@ -1,5 +1,4 @@
-{
- "green": ["green-estatic", "green-lime", "green-apple", "green-pepper", "green-light-mint", "green-teal", "green-zuchinni", "green-mint"],
- "blue": ["blue-estatic", "blue-stormy", "blue-night", "blue-dark-highlight", "blue-sky"],
- "yellow": ["yellow-gatorade", "yellow-light-mustard", "yellow-dijon-mustard", "yellow-mustard", "yellow-custard"]
-}
+{ 
+ "green": ["green-light-mint", "green-estatic", "green-teal", "green-pepper", "green-zuchinni"],
+ " blue": ["blue-sky", "blue-estatic", "blue-dark-highlight", "blue-stormy", "blue-night"],
+ "yellow": ["yellow-custard", "yellow-gatorade", "yellow-something", "yellow-dijon-mustard", "yellow-mustard"]} 
