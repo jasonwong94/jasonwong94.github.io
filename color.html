@@ -24,14 +24,20 @@
   <body class="container" ng-controller="colourController as ctrl">
     <h1>
       <span>Colour Scheme</span>
-      <button class='btn btn-primary' type="button"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+      <button class='btn btn-primary' type="button" ng-click="ctrl.loadContent()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
     </h1>
 
-    <span>Last fetched: {{ctrl.dataFetched.toString()}}</span>
 
     <div class="alert alert-info">
       <strong><i class="fa fa-info-circle" aria-hidden="true"></i></strong>
       <span>Please run <kbd>$python generate_colour-scheme.py</kbd> to get updated colour scheme</span>
+      <p>Last fetched: {{ctrl.dataFetched.toString()}}</p>
+    </div>
+
+    <div class="alert alert-danger" ng-if="ctrl.error">
+      <strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong>
+      <span>Unable to load .json file. The colour scheme below has <strong>not</strong> been updated. Please try running the python script again..</span>
+      <p>Last attempt: {{ctrl.dataFetched.toString()}}</p>
     </div>
     <section ng-repeat="(key, value) in ctrl.data">
       <h2>{{key}}</h2>
