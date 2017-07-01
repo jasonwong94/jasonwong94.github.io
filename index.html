@@ -85,7 +85,7 @@
             <p>What may I interest you in today?</p>
             <p>Click the buttons below to find out more about me.</p>
           </div>
-          <aside class="col-md-3 col-sm-3">
+          <aside class="col-md-3 col-sm-3 col-xs-3">
             <a href="#about" ng-click="ctrl.togglePane()">
             <div class="panel panel-default">
 
@@ -100,7 +100,7 @@
             </a>
           </aside>
 
-          <aside class="col-md-3 col-sm-3">
+          <aside class="col-md-3 col-sm-3 col-xs-3">
             <a href="#education" ng-click="ctrl.togglePane()">
             <div class="panel panel-default">
               <div class="panel-body">
@@ -114,7 +114,7 @@
             </a>
           </aside>
 
-          <aside class="col-md-3 col-sm-3">
+          <aside class="col-md-3 col-sm-3 col-xs-3">
             <a href="#projects" ng-click="ctrl.togglePane()">
             <div class="panel panel-default">
               <div class="panel-body">
@@ -128,7 +128,7 @@
             </a>
           </aside>
 
-          <aside class="col-md-3 col-sm-3">
+          <aside class="col-md-3 col-sm-3 col-xs-3">
             <a href="#resume" ng-click="ctrl.togglePane()">
             <div class="panel panel-default">
               <div class="panel-body">
@@ -268,6 +268,18 @@
         </div>
 
         <p>Here are some of my projects. Check out my Github account for more info!</p>
+        <div class="row text-center">
+          <button type="button" class="btn btn-default" ng-repeat="(key, project) in ctrl.projects">{{project.title}}</button>
+
+          <div class="well" id="project-description">
+            <article ng-repeat="(key, project) in ctrl.projects">
+              <h2>{{project.title}}</h2>
+              <p>{{project.description}}</p>
+            </article>
+
+          </div>
+        </div>
+
         <div class="row">
           <aside class="col-md-3" ng-repeat = "(key, project) in ctrl.projects">
             <div class="panel panel-tertiary">

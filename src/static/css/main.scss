@@ -13,7 +13,7 @@ body{
   }
 
   .navbar{
-    background-color: $blue-stormy;
+    background-color: $blue-night;
 
     &.navbar a{
       color: $blue-estatic;
@@ -44,33 +44,26 @@ body{
 
   .panel-secondary{
     border-color: $green-pepper;
-    background-color: $green-light-mint;
 
     h2 > small{
       color: $green-pepper;
     }
 
     .panel-heading{
-      background-color: $green-mint;
     }
 
     .label-default{
-      background-color: $green-teal;
+      background-color: $green-pepper;
     }
 
     .btn-success{
-      background-color: $green-zuchinni;
-      color: $green-estatic;
+      background-color: $green-teal;
+      color: white;
     }
   }
 
   .panel-tertiary{
     border-color: $yellow-dijon-mustard;
-    background-color: $yellow-light-mustard;
-
-    .panel-heading{
-      background-color: $yellow-custard;
-    }
 
     h2 > small{
       color: $yellow-mustard;
@@ -78,11 +71,11 @@ body{
   }
 
   .label-default{
-    background-color: $blue-sky;
+    background-color: $blue-estatic;
   }
 
   #interactiveStart{
-    background-color: $blue-stormy;
+    background-color: $blue-night;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -128,7 +121,7 @@ body{
     input{
 
       &:hover{
-        border: 2px solid $blue-sky;
+        border: 2px solid $blue-estatic;
       }
     }
 
@@ -146,7 +139,7 @@ body{
   }
 
   .name{
-    color: $green-pepper;
+    color: $blue-night;
   }
 
   article{
@@ -156,6 +149,12 @@ body{
   footer{
     margin: 0px;
     background-color: $gray-smoke;
+  }
+
+  .btn-info{
+    background-color: $blue-dark-highlight;
+    border-color: $blue-night;
+    color: white;
   }
 
 }

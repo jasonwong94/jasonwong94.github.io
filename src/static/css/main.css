@@ -5,12 +5,12 @@
 #customStyle .navbar {
   background-color: #013335; }
   #customStyle .navbar.navbar a {
-    color: #01ECF7; }
+    color: #00cdd6; }
   #customStyle .navbar li.active > a {
     background-color: #025d61;
     color: white; }
   #customStyle .navbar.navbar .navbar-right a {
-    color: #C8FE00; }
+    color: #fbff02; }
 #customStyle h1 {
   color: #025d61;
   font-weight: 400; }
@@ -19,26 +19,20 @@
 #customStyle h2 > small {
   color: #29A10A; }
 #customStyle .panel-secondary {
-  border-color: #29A10A;
-  background-color: #f6fff6; }
+  border-color: #29A10A; }
   #customStyle .panel-secondary h2 > small {
     color: #29A10A; }
-  #customStyle .panel-secondary .panel-heading {
-    background-color: #d8fde2; }
   #customStyle .panel-secondary .label-default {
-    background-color: #23bb59; }
+    background-color: #29A10A; }
   #customStyle .panel-secondary .btn-success {
-    background-color: #20422c;
-    color: #30E600; }
+    background-color: #23bb59;
+    color: white; }
 #customStyle .panel-tertiary {
-  border-color: #b3c707;
-  background-color: #fffff6; }
-  #customStyle .panel-tertiary .panel-heading {
-    background-color: #fcfdd8; }
+  border-color: #e1e40a; }
   #customStyle .panel-tertiary h2 > small {
     color: #b4b701; }
 #customStyle .label-default {
-  background-color: #01b4de; }
+  background-color: #00cdd6; }
 #customStyle #interactiveStart {
   background-color: #013335;
   position: fixed;
@@ -47,7 +41,7 @@
   z-index: 2;
   overflow-y: auto; }
   #customStyle #interactiveStart h1 {
-    color: #01ECF7;
+    color: #00cdd6;
     font-weight: lighter; }
   #customStyle #interactiveStart h2 {
     color: white; }
@@ -65,20 +59,24 @@
     #customStyle #interactiveStart #closeDialog:hover {
       color: white; }
   #customStyle #interactiveStart input:hover {
-    border: 2px solid #01b4de; }
+    border: 2px solid #00cdd6; }
 #customStyle .closeDialog {
   positon: absolute;
   top: 5px;
   right: 5px; }
 #customStyle .btn-primary {
-  background-color: #013335;
-  color: #01ECF7; }
+  background-color: #06b0b7;
+  color: #00cdd6; }
 #customStyle .name {
-  color: #29A10A; }
+  color: #013335; }
 #customStyle article {
   padding-top: 75px; }
 #customStyle footer {
   margin: 0px;
   background-color: #f0f8f9; }
+#customStyle .btn-info {
+  background-color: #025d61;
+  border-color: #013335;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */
