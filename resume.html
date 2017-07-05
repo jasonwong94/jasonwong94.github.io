@@ -75,7 +75,7 @@
 							<h4>{{ value.title }}</h4>
 						</div>
 						<div class="panel-body">
-							<span ng-repeat="item in value.keypoints" class="label label-default"> {{ item }}</span>
+							<div ng-repeat="item in value.keypoints" class="label label-default"> {{ item }}</div>
 							<p>{{ value.description }}</p>
 						</div>
 					</div>
@@ -91,7 +91,9 @@
 
 		<!-- ??? -->
 		<footer class="container-fluid">
-
+			<p>
+				Last fetched: {{ctrl.dataFetched.toString()}}
+			</p>
 		</footer>
 
 	</body>
