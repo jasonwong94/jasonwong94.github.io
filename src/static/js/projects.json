@@ -1,0 +1,56 @@
+[{
+  "title": "Connect 4",
+  "organization":"Spark Design Club",
+  "tag": "Embedded",
+  "description": "A magnified and electronic version of Connect 4, this display used LEDs to represent the coloured discs and was controlled with an Arduino. A 8x8 LED driver was used to control which tile with lit and a current mirror used to provide sufficient current to the 8 LEDs representing a disc ",
+  "image": {
+    "url": "/src/static/images/Connect4.jpg",
+    "description": "Connect 4 display in Bahen"
+  },
+  "links": [{
+      "title": "Code",
+      "url":"https://github.com/sparkuoft/Spark-Connect4-x100"
+    }, {
+      "title": "Photos from Workshop",
+      "url":"http://www.photos.skule.ca/Clubs/Spark-Design-Club/Display-Workshops/Connect-4-Oct-2016"
+  }],
+  "keypoints": {
+    "design": "A row of 2x2's were used to form a rib to attach the circuit board onto the frame. The LEDs were soldered onto a board forming a circular pattern",
+    "features": "The yellow tactile switches activated the column drop",
+    "implementation":"In over 2 weekends, the mechanical structure and electrical circuit were built by the exec team and volunteers"
+  }
+}, {
+  "title": "Wall Charging with GaN",
+  "organization": "4th Year Capstone Project",
+  "tag": "Hardware",
+  "description": "4th Year Capstone Design Project. For capstone, we designed a USB-C controller, comparing effeciencies of gallium nitride (GaN) vs silicon (Si) transistors",
+  "image": {
+    "url": "/src/static/images/Capstone.jpg"}
+}, {
+  "title": "You're Next Career Network",
+  "organization": "You're Next Career Network",
+  "tag": "Software",
+  "description": "Designed and brought new features to the You're Next website. New features include events, jobs and resources. Developed with Python and jQuery",
+  "imageURL": {
+    "url": ""}
+}, {
+  "title": "Music Switchboard",
+  "organization": "Spark Design Club",
+  "tag": "Embedded",
+  "description": "A giant array of tactile switches used to compose music. Measuring 4 feet by 3 feet, this enormous (and heavy!) display was programmed with an Arduino and Raspberry Pi. A MOSFET circuit was used to multiplex each column to read the values.",
+  "image": {
+    "url": "/src/static/images/SparkTunes.jpg",
+    "description": "Spark Tunes in display at Bahen"},
+  "links":[{
+    "title": "Code",
+    "url": "https://github.com/jasonwong94/SparkTunes"
+    }, {
+      "title": "Photos from the Workshop",
+      "url": "http://www.photos.skule.ca/Clubs/Spark-Design-Club/Display-Workshops/Spark-Tunes-Mar-2016"
+    }],
+  "keypoints":{
+      "design":"Based on of first displays, the 'Switchboard', this display would allow users to compose music; each switch represented a note where the user can toggle the switch to activate the note and adjust the speed by turning the knob.",
+      "features": "Ability to adjust music. Use of an LED strip to indicate progress and indicate status of display (for debugging). Awesome easter egg",
+      "implementation": "The panels were laser-cutted to minimize the time constraints and provide an accurate cutout. A frame made out of 2x4's were used to mount the panels, with the MOSFET circuitry designed to read column by column and parsed by an Arduino. The Arduino communicated with the Pi, which played the piano notes accordingly."
+  }
+}]

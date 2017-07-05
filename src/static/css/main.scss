@@ -56,9 +56,14 @@ body{
       background-color: $green-pepper;
     }
 
-    .btn-success{
-      background-color: $green-teal;
-      color: white;
+    .btn-success, .btn-secondary{
+      background-color: white;
+      color: $green-teal;
+
+      &:hover{
+        background-color: $green-teal;
+        color: white;
+      }
     }
   }
 
@@ -155,6 +160,24 @@ body{
     background-color: $blue-dark-highlight;
     border-color: $blue-night;
     color: white;
+  }
+
+  .btn-warning, .btn-tertiary{
+    border-color: $yellow-dijon-mustard;
+    color: $yellow-mustard;
+    background-color: white;
+
+    &:hover{
+      background-color: $yellow-dijon-mustard;
+      color: white;
+    }
+  }
+
+  .label-tertiary{
+    background-color: $yellow-dijon-mustard;
+  }
+
+  #project-description{
   }
 
 }

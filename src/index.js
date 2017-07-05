@@ -1,21 +1,3 @@
-var projects = [{
-  "title": "Connect 4",
-  "tag": "Embedded",
-  "description": "In my opinion, one of the best projects I've managed while in Spark."
-}, {
-  "title": "Wall Charging with GaN",
-  "tag": "Hardware",
-  "description": "4th Year Capstone Design Project. For capstone, we designed a USB-C controller, comparing effeciencies of gallium nitride (GaN) vs silicon (Si) transistors"
-}, {
-  "title": "You're Next Career Network",
-  "tag": "Software",
-  "description": "Designed and brought new features to the You're Next website. New features include events, jobs and resources. Developed with Python and jQuery"
-}, {
-  "title": "Music Switchboard",
-  "tag": "Embedded",
-  "description": "A giant array of tactile switches used to compose music. Measuring 4 feet by 3 feet, this enormous (and heavy!) display was programmed with an Arduino and Raspberry Pi. A MOSFET circuit was used to multiplex each column to read the values."
-}]
-
 angular.module("jasonwong94-mainpage", [])
   .controller('mainPageController', ["$http", "$scope", "$interval", function($http, $scope, $interval){
       var content = this;
@@ -23,7 +5,8 @@ angular.module("jasonwong94-mainpage", [])
       content.isSubmitted = false;
       content.name = undefined;
       content.time = new Date().toLocaleTimeString();
-      content.projects = projects;
+      // content.projects = projects;
+      content.projectID = 0;
 
       console.debug("Controller loaded!");
 
@@ -44,6 +27,25 @@ angular.module("jasonwong94-mainpage", [])
         content.isSubmitted = false
       }
 
+      content.getProject = function(){
+        $http.get('./src/static/js/projects.json').then(function(response, error){
+          if(!error){
+            content.projects = response.data;
+          } else {
+            //content.projects = data.response;
+          }
+        })
+      }
+
+      content.selectProject = function(projectID){
+        content.projectID = projectID;
+        console.info(content.projectID)
+      }
+
+      content.isProject = function(projectID){
+        return content.projectID == projectID;
+      }
+
       function setTime(){
         content.time = new Date().toLocaleTimeString();
       }
@@ -57,5 +59,7 @@ angular.module("jasonwong94-mainpage", [])
         else
           return "Good Evening, " + name;
       }
+
+      this.getProject()
     }
   ])
