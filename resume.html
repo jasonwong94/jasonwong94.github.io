@@ -22,19 +22,24 @@
 		<!-- Contains "interactive" feature to select info about Resume -->
 		<header class="container-fluid">
 			<h1>Jason Wong | My Resume</h1>
+
+			<div class="alert alert-warning">
+				<span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>This portion of the website is still under construction. In the mean time, you may want to download .pdf and use it as your 'official' medium</span>
+			</div>
+
 			<div class="well well-md">
 				<article class="row">
 					<section id="interactive" class="col-md-8">
 						<h3>Filter</h3>
-						<button type="button" class="btn btn-success">Hardware</button>
-						<button type="button" class="btn btn-success">Software</button>
+						<button type="button" class="btn btn-success disabled">Hardware</button>
+						<button type="button" class="btn btn-success disabled">Software</button>
 					</section>
 
 					<section id="downloads" class="col-md-4">
 						<h3>Download</h3>
 						<a class="btn btn-info" href="./src/static/Jason_Wong_resume_hardware.pdf"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Hardware</a>
 						<a class="btn btn-info" href="./src/static/Jason_Wong_resume_software.pdf"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Software</a>
-						<a class="btn btn-info disabled" href="#"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Json Format</a>
+						<a class="btn btn-info" href="/src/static/js/resume.json"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Json Format</a>
 					</section>
 				</article>
 			</div>
