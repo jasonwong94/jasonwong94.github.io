@@ -157,9 +157,14 @@ body{
   }
 
   .btn-info{
-    background-color: $blue-dark-highlight;
     border-color: $blue-night;
-    color: white;
+    color: $blue-dark-highlight;
+    background-color: white;
+
+    &:hover{
+      background-color: $blue-dark-highlight;
+      color: white;
+    }
   }
 
   .btn-warning, .btn-tertiary{
@@ -178,6 +183,29 @@ body{
   }
 
   #project-description{
+    article {
+      padding-top: 20px;
+    }
+
+    footer {
+      background: none;
+    }
+
+    h2 > p{ color: $yellow-mustard;}
   }
 
+  .bannerImage{
+    background-color: black;
+
+    color: lightgray;
+
+    img{
+      padding:0px;
+      opacity: 0.7;
+    }
+  }
+
+  #map{
+    height:400px;
+  }
 }

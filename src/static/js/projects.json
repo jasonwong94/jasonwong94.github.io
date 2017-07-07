@@ -32,7 +32,12 @@
   "tag": "Software",
   "description": "Designed and brought new features to the You're Next website. New features include events, jobs and resources. Developed with Python and jQuery",
   "imageURL": {
-    "url": ""}
+    "url": ""},
+  "keypoints": {
+    "design":"To provide better resources and connect with undergraduate students, the existing website was extended",
+    "features":"Job search",
+    "implementation": ""
+  }
 }, {
   "title": "Music Switchboard",
   "organization": "Spark Design Club",
