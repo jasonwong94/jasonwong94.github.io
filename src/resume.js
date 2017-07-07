@@ -4,8 +4,8 @@ angular.module("jasonwong94-resume", [])
 
 		var content = this;
 
-		$scope.smth = [1, 2, 3, 4]
-		content.smth = [5, 6, 7, 8]
+		content.hardware = true;
+		content.software = true;
 
 		content.getResume = function(){
 			$http.get("/src/static/js/resume.json").then(function(response, error){
@@ -21,6 +21,18 @@ angular.module("jasonwong94-resume", [])
 
 				}
 			})
+		}
+
+		content.toggleHardware= function(){
+			content.hardware = !content.hardware
+		}
+
+		content.toggleSoftware= function(){
+			content.software = !content.software
+		}
+
+		content.isType= function(type){
+			return content[type]
 		}
 
 		this.getResume()

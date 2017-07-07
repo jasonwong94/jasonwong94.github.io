@@ -11,6 +11,7 @@
 			"title": "Front End Developer",
 			"company": "You're Next Career Network",
 			"duration": ["May 2016", "May 2017"],
+			"type": "software",
 			"keypoints": [
 				"Implemented new features to the existing website to cater for engineering students. Features include a new event and job listings to expand services to students",
 				"Collaborated with various undergraduate students from different coding background to create a framework architecture for future YNCN developers"
@@ -19,6 +20,7 @@
 			"title": "Summer Volunteer Researcher",
 			"company": "University of Toronto",
 			"duration": ["May 2016", "August 2016"],
+			"type": "hardware",
 			"keypoints": [
 				"Assisted in investigating Class D Audio Amplifiers with Si and GaN transistors",
 				"Utilized lab equipment (logic analyzer and Audio Precision interface) to analyze digitalized sound sent to programmable codec board",
@@ -28,6 +30,7 @@
 			"title": "Front End Intern",
 			"company": "AdParlor",
 			"duration": ["November 2015", "April 2016"],
+			"type": "software",
 			"keypoints": [
 				"Enhanced and modified the frontend AdParlor platform using Backbone, MarionetteJS and StickIt",
 				"Proactively investigated and closed bug requests as they became available through request queues- reduced existing bug queue by 40%",
@@ -38,6 +41,7 @@
 			"title": "Software Developer",
 			"company": "Desire2Learn (D2L)",
 			"duration": ["May 2015", "September 2015"],
+			"type": "software",
 			"keypoints": [
 				"Refurbished existing product features using Javascript libraries (NodeJS, Karma and Angular), HTML and Sass",
 				"Collaborated and modified code with senior developers through GitHub, communicated with UI designer to redesign UI",

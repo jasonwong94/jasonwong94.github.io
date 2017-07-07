@@ -31,8 +31,8 @@
 				<article class="row">
 					<section id="interactive" class="col-md-8">
 						<h3>Filter</h3>
-						<button type="button" class="btn btn-success disabled">Hardware</button>
-						<button type="button" class="btn btn-success disabled">Software</button>
+						<button type="button" class="btn btn-success" ng-click="ctrl.toggleHardware()">Hardware</button>
+						<button type="button" class="btn btn-success" ng-click="ctrl.toggleSoftware()">Software</button>
 					</section>
 
 					<section id="downloads" class="col-md-4">
@@ -59,7 +59,7 @@
 			<section id="experience" class="col-md-9">
 				<h3>Experience</h3>
 				<div class="well">
-					<div ng-repeat="(experience, value) in ctrl.resume.experience" class="panel panel-default">
+					<div ng-repeat="(experience, value) in ctrl.resume.experience" class="panel panel-default" ng-show="ctrl.isType( value.type)">
 						<div class="panel-heading">
 							<h4>{{ value.title }} <small> {{ value.company}}</small> <span class="text-primary"> {{ value.duration[0] }} - {{ value.duration[1] }}</span> </h4>
 						</div>
