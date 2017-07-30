@@ -10,9 +10,4 @@ function initMap() {
       position: yyz,
       map: map
     });
-
-    google.maps.event.addListener(map, "idle", function()
-        {
-            google.maps.event.trigger(map, 'resize');
-        });
   }

@@ -60,12 +60,12 @@
     <header class="jumbotron" id="interactiveStart" ng-hide="!ctrl.isDialogOpen">
       <div class="container-fluid">
         <div class="text-right"><a href="#" ng-click="ctrl.togglePane()" id="closeDialog">X</a></div>
-        <section ng-show="!ctrl.isSubmitted">
+        <section  ng-if="!ctrl.isSubmitted">
           <h1>Hello my name is...</h1>
           <form>
             <div ng-class="{'form-group':!ctrl.name, 'input-group':ctrl.name}">
               <input type="text" class="form-control input-lg" id="name" placeholder="Your Name" ng-model="ctrl.name" autocomplete="off">
-              <div class="input-group-btn" ng-show="ctrl.name">
+              <div class="input-group-btn"  ng-if="ctrl.name">
                 <button class="btn btn-danger" ng-click="ctrl.resetName()">X</button>
               </div>
             </div>
@@ -83,7 +83,7 @@
           </form>
         </section>
 
-        <section class="row text-center" ng-show="ctrl.isSubmitted">
+        <section class="row text-center" ng-if="ctrl.isSubmitted">
           <h1> {{ctrl.greeting}} </h1>
           <h2> {{ctrl.time}}</h2>
           <div class="text-center">
@@ -151,7 +151,7 @@
     </header>
 
     <!-- Content Stuff -->
-    <section class="container-fluid" id="content" ng-hide="ctrl.isDialogOpen">
+    <section class="container-fluid" id="content" ng-if="!ctrl.isDialogOpen">
       <article id="about">
         <header>
           <h1>About Me</h1>
@@ -337,11 +337,13 @@
         <header>
           <h1>Resume</h1>
           <div class="row bannerImage">
+
             <figure>
               <div id="map" class="col-md-6"></div>
                 <script async defer
                 src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyB573n2A0o3QaYyqVsikRjq_5KPS0fr5nU&callback=initMap">
                 </script>
+
               <figcaption class="col-md-6">
                 <h2>Currently seeking hardware experience</h2>
                 <!-- Please hire me Texas Instruments, Analog Devices or ONSemi... or any awesome hardware company -->
@@ -384,7 +386,6 @@
 
       </article>
     </section>
-
 
 
     <footer class="jumbotron text-center">
