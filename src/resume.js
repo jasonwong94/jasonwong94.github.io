@@ -35,6 +35,10 @@ angular.module("jasonwong94-resume", [])
 			return content[type]
 		}
 
+		content.isNoneSelected= function(){
+			return !(content.hardware || content.software)
+		}
+
 		this.getResume()
 	}])
 
