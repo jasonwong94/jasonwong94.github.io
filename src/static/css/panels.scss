@@ -1,0 +1,58 @@
+@import "colours.scss";
+
+  .panel{
+    border-radius: 1px;
+    border-color: lightgray;
+
+    .panel-heading{
+      background-color: whitesmoke;
+      border-color: darkgray;
+      border-width: 2px;
+      color: gray;
+    }
+  }
+
+  .panel-primary{
+    box-shadow: 2px 2px 2px whitesmoke;
+
+    .panel-heading{
+      border-color: $blue-stormy;
+      color: $blue-stormy;
+    }
+
+  }
+
+  .panel-secondary{
+    box-shadow: 2px 2px 2px whitesmoke;
+
+    h2 > small{
+      color: $green-pepper;
+    }
+
+    .panel-heading{
+      border-color: $green-pepper;
+      color: $green-pepper;
+    }
+
+    .label-default{
+      background-color: $green-pepper;
+    }
+
+    .btn-success, .btn-secondary{
+      background-color: white;
+      color: $green-teal;
+
+      &:hover{
+        background-color: $green-teal;
+        color: white;
+      }
+    }
+  }
+
+  .panel-tertiary{
+    border-color: $yellow-dijon-mustard;
+
+    h2 > small{
+      color: $yellow-mustard;
+    }
+  }

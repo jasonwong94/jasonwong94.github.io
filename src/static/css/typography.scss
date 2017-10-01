@@ -1,0 +1,21 @@
+@import "colours.scss";
+
+p{
+  font-size: 1.25em;
+  font-weight: 200;
+  color: gray;
+}
+
+h1{
+  color: $blue-dark-highlight;
+  font-weight: 400;
+}
+
+h2{
+  font-weight: 200;
+  color: white;
+}
+
+h2 > small{
+  color: $green-pepper;
+}

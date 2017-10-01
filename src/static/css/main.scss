@@ -1,4 +1,8 @@
 @import "colours.scss";
+@import "typography.scss";
+@import "panels.scss";
+@import "labels.scss";
+@import "buttons.scss";
 
 body{
 
@@ -6,10 +10,8 @@ body{
 
 #customStyle{
 
-  p{
-    font-size: 1.25em;
-    font-weight: 200;
-    color: gray;
+  body{
+    position: relative;
   }
 
   .navbar{
@@ -29,83 +31,6 @@ body{
     &.navbar .navbar-right a{
       color: $blue-dark-highlight;
     }
-  }
-
-  h1{
-    color: $blue-dark-highlight;
-    font-weight: 400;
-  }
-
-  h2{
-    font-weight: 200;
-    color: white;
-  }
-
-  h2 > small{
-    color: $green-pepper;
-  }
-
-  .panel{
-    border-radius: 1px;
-    border-color: lightgray;
-
-    .panel-heading{
-      background-color: whitesmoke;
-      border-color: darkgray;
-      border-width: 2px;
-      color: gray;
-    }
-  }
-
-  .panel-primary{
-    box-shadow: 2px 2px 2px whitesmoke;
-
-    .panel-heading{
-      border-color: $blue-stormy;
-      color: $blue-stormy;
-    }
-
-  }
-
-  .panel-secondary{
-    border-color: $green-pepper;
-
-    h2 > small{
-      color: $green-pepper;
-    }
-
-    .panel-heading{
-    }
-
-    .label-default{
-      background-color: $green-pepper;
-    }
-
-    .btn-success, .btn-secondary{
-      background-color: white;
-      color: $green-teal;
-
-      &:hover{
-        background-color: $green-teal;
-        color: white;
-      }
-    }
-  }
-
-  .panel-tertiary{
-    border-color: $yellow-dijon-mustard;
-
-    h2 > small{
-      color: $yellow-mustard;
-    }
-  }
-
-  .label-default{
-    background-color: $blue-estatic;
-  }
-
-  .label-default-dark{
-    background-color: $blue-stormy;
   }
 
   #interactiveStart{
@@ -167,11 +92,6 @@ body{
     right: 5px;
   }
 
-  .btn-primary{
-    background-color: $blue-stormy;
-    color: $blue-estatic;
-  }
-
   .name{
     color: $blue-estatic;
   }
@@ -189,60 +109,6 @@ body{
     background-color: $gray-smoke;
   }
 
-  .btn-success{
-    background-color: $green-estatic;
-    color: white;
-  }
-
-  .btn-success-dark{
-    background-color: #48c173;
-    color: white;
-  }
-
-  .btn-success-outline{
-    background: none;
-    color: $green-estatic;
-    border: 1px solid gray;
-
-    &:hover{
-      border-color: $green-teal;
-    }
-
-    &.active{
-      background-color: $green-estatic;
-      color: white;
-    }
-  }
-
-  .btn-info{
-    border-color: gray;
-    color: $blue-stormy;
-    background: none;
-
-    &:hover{
-      border-color: $blue-stormy;
-    }
-
-    &.active{
-      background-color: $blue-stormy;
-      color: white;
-    }
-  }
-
-  .btn-warning, .btn-tertiary{
-    border-color: $yellow-dijon-mustard;
-    color: $yellow-mustard;
-    background-color: white;
-
-    &:hover{
-      background-color: $yellow-dijon-mustard;
-      color: white;
-    }
-  }
-
-  .label-tertiary{
-    background-color: $yellow-dijon-mustard;
-  }
 
   #project-description{
     article {
@@ -280,7 +146,7 @@ body{
     background: none;
     border-width: 1px;
 
-    &.active{
+    &.active, &:focus{
       background-color: #48696b;
       color: white;
     }

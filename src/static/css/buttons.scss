@@ -1,0 +1,69 @@
+@import "colours.scss";
+
+  .btn-primary, .open{
+    background: none;
+    color: $blue-estatic;
+    border: 1px solid gray;
+
+    &:hover{
+      border-color: $blue-stormy;
+      color: $blue-estatic;
+      background: none;
+    }
+
+    &.active{
+      background-color: $blue-stormy;
+      color: white;
+    }
+  }
+
+  .btn-success{
+    background-color: $green-estatic;
+    color: white;
+  }
+
+  .btn-success-dark{
+    background-color: #48c173;
+    color: white;
+  }
+
+  .btn-success-outline{
+    background: none;
+    color: $green-estatic;
+    border: 1px solid gray;
+
+    &:hover{
+      border-color: $green-teal;
+    }
+
+    &.active{
+      background-color: $green-estatic;
+      color: white;
+    }
+  }
+
+  .btn-info{
+    border-color: gray;
+    color: $blue-stormy;
+    background: none;
+
+    &:hover{
+      border-color: $blue-stormy;
+    }
+
+    &.active{
+      background-color: $blue-stormy;
+      color: white;
+    }
+  }
+
+  .btn-warning, .btn-tertiary{
+    border-color: $yellow-dijon-mustard;
+    color: $yellow-mustard;
+    background-color: white;
+
+    &:hover{
+      background-color: $yellow-dijon-mustard;
+      color: white;
+    }
+  }
