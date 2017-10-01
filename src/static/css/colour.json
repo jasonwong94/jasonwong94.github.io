@@ -1,4 +1,5 @@
 { 
  "green": ["green-light-mint", "green-estatic", "green-teal", "green-pepper", "green-zuchinni"],
  " blue": ["blue-sky", "blue-estatic", "blue-dark-highlight", "blue-stormy", "blue-night"],
- "yellow": ["yellow-custard", "yellow-gatorade", "yellow-something", "yellow-dijon-mustard", "yellow-mustard"]} 
+ "yellow": ["yellow-custard", "yellow-gatorade", "yellow-something", "yellow-dijon-mustard", "yellow-mustard"],
+ "orange": ["orange"]} 

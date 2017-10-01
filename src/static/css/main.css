@@ -3,21 +3,37 @@
   font-weight: 200;
   color: gray; }
 #customStyle .navbar {
-  background-color: #013335; }
+  background-color: white;
+  border-bottom-width: 1px;
+  border-color: lightgray; }
   #customStyle .navbar.navbar a {
-    color: #00cdd6; }
+    color: #025d61; }
   #customStyle .navbar li.active > a {
     background-color: #025d61;
     color: white; }
   #customStyle .navbar.navbar .navbar-right a {
-    color: #fbff02; }
+    color: #025d61; }
 #customStyle h1 {
   color: #025d61;
   font-weight: 400; }
 #customStyle h2 {
-  font-weight: 200; }
+  font-weight: 200;
+  color: white; }
 #customStyle h2 > small {
   color: #29A10A; }
+#customStyle .panel {
+  border-radius: 1px;
+  border-color: lightgray; }
+  #customStyle .panel .panel-heading {
+    background-color: whitesmoke;
+    border-color: darkgray;
+    border-width: 2px;
+    color: gray; }
+#customStyle .panel-primary {
+  box-shadow: 2px 2px 2px whitesmoke; }
+  #customStyle .panel-primary .panel-heading {
+    border-color: #08858a;
+    color: #08858a; }
 #customStyle .panel-secondary {
   border-color: #29A10A; }
   #customStyle .panel-secondary h2 > small {
@@ -36,6 +52,8 @@
     color: #b4b701; }
 #customStyle .label-default {
   background-color: #00cdd6; }
+#customStyle .label-default-dark {
+  background-color: #08858a; }
 #customStyle #interactiveStart {
   background-color: #013335;
   position: fixed;
@@ -68,21 +86,40 @@
   top: 5px;
   right: 5px; }
 #customStyle .btn-primary {
-  background-color: #06b0b7;
+  background-color: #08858a;
   color: #00cdd6; }
 #customStyle .name {
   color: #00cdd6; }
 #customStyle article {
-  padding-top: 75px; }
+  padding-top: 30px; }
+  #customStyle article:first-of-type {
+    padding-top: 50px; }
 #customStyle footer {
   margin: 0px;
   background-color: #f0f8f9; }
+#customStyle .btn-success {
+  background-color: #2dd075;
+  color: white; }
+#customStyle .btn-success-dark {
+  background-color: #48c173;
+  color: white; }
+#customStyle .btn-success-outline {
+  background: none;
+  color: #2dd075;
+  border: 1px solid gray; }
+  #customStyle .btn-success-outline:hover {
+    border-color: #23bb59; }
+  #customStyle .btn-success-outline.active {
+    background-color: #2dd075;
+    color: white; }
 #customStyle .btn-info {
-  border-color: #013335;
-  color: #025d61;
-  background-color: white; }
+  border-color: gray;
+  color: #08858a;
+  background: none; }
   #customStyle .btn-info:hover {
-    background-color: #025d61;
+    border-color: #08858a; }
+  #customStyle .btn-info.active {
+    background-color: #08858a;
     color: white; }
 #customStyle .btn-warning, #customStyle .btn-tertiary {
   border-color: #e1e40a;
@@ -98,13 +135,28 @@
 #customStyle #project-description footer {
   background: none; }
 #customStyle #project-description h2 > p {
-  color: #b4b701; }
+  color: #025d61; }
+#customStyle #project-description h3 {
+  font-weight: 100; }
 #customStyle .bannerImage {
-  background-color: black;
+  background-color: #032829;
+  margin-bottom: 30px;
   color: lightgray; }
   #customStyle .bannerImage img {
     padding: 0px;
     opacity: 0.7; }
+  #customStyle .bannerImage p {
+    color: #a2a2a2; }
+#customStyle .carousel-selection {
+  cursor: pointer;
+  border-radius: 0px;
+  background: none;
+  border-width: 1px; }
+  #customStyle .carousel-selection.active {
+    background-color: #48696b;
+    color: white; }
+  #customStyle .carousel-selection:hover {
+    border-color: #08858a; }
 #customStyle #map {
   height: 400px; }
 

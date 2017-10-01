@@ -58,4 +58,10 @@
       "features": "Ability to adjust music. Use of an LED strip to indicate progress and indicate status of display (for debugging). Awesome easter egg",
       "implementation": "The panels were laser-cutted to minimize the time constraints and provide an accurate cutout. A frame made out of 2x4's were used to mount the panels, with the MOSFET circuitry designed to read column by column and parsed by an Arduino. The Arduino communicated with the Pi, which played the piano notes accordingly."
   }
+}, {
+  "title": "Infrared LEDs",
+  "organization": "Spark Design Club"
+}, {
+  "title": "Ready Set Step!",
+  "organization": "Spark Design Club"
 }]

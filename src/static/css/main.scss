@@ -13,10 +13,12 @@ body{
   }
 
   .navbar{
-    background-color: $blue-night;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-color: lightgray;
 
     &.navbar a{
-      color: $blue-estatic;
+      color: $blue-dark-highlight;
     }
 
     & li.active > a{
@@ -25,7 +27,7 @@ body{
     }
 
     &.navbar .navbar-right a{
-      color: $yellow-gatorade;
+      color: $blue-dark-highlight;
     }
   }
 
@@ -36,10 +38,33 @@ body{
 
   h2{
     font-weight: 200;
+    color: white;
   }
 
   h2 > small{
     color: $green-pepper;
+  }
+
+  .panel{
+    border-radius: 1px;
+    border-color: lightgray;
+
+    .panel-heading{
+      background-color: whitesmoke;
+      border-color: darkgray;
+      border-width: 2px;
+      color: gray;
+    }
+  }
+
+  .panel-primary{
+    box-shadow: 2px 2px 2px whitesmoke;
+
+    .panel-heading{
+      border-color: $blue-stormy;
+      color: $blue-stormy;
+    }
+
   }
 
   .panel-secondary{
@@ -77,6 +102,10 @@ body{
 
   .label-default{
     background-color: $blue-estatic;
+  }
+
+  .label-default-dark{
+    background-color: $blue-stormy;
   }
 
   #interactiveStart{
@@ -148,7 +177,11 @@ body{
   }
 
   article{
-    padding-top: 75px;
+    padding-top: 30px;
+
+    &:first-of-type{
+      padding-top: 50px;
+    }
   }
 
   footer{
@@ -156,13 +189,42 @@ body{
     background-color: $gray-smoke;
   }
 
-  .btn-info{
-    border-color: $blue-night;
-    color: $blue-dark-highlight;
-    background-color: white;
+  .btn-success{
+    background-color: $green-estatic;
+    color: white;
+  }
+
+  .btn-success-dark{
+    background-color: #48c173;
+    color: white;
+  }
+
+  .btn-success-outline{
+    background: none;
+    color: $green-estatic;
+    border: 1px solid gray;
 
     &:hover{
-      background-color: $blue-dark-highlight;
+      border-color: $green-teal;
+    }
+
+    &.active{
+      background-color: $green-estatic;
+      color: white;
+    }
+  }
+
+  .btn-info{
+    border-color: gray;
+    color: $blue-stormy;
+    background: none;
+
+    &:hover{
+      border-color: $blue-stormy;
+    }
+
+    &.active{
+      background-color: $blue-stormy;
       color: white;
     }
   }
@@ -191,17 +253,40 @@ body{
       background: none;
     }
 
-    h2 > p{ color: $yellow-mustard;}
+    h2 > p{ color: $blue-dark-highlight;}
+    h3 {
+      font-weight: 100;
+    }
   }
 
   .bannerImage{
-    background-color: black;
-
+    background-color: #032829;
+    margin-bottom: 30px;
     color: lightgray;
 
     img{
       padding:0px;
       opacity: 0.7;
+    }
+
+    p{
+      color: #a2a2a2;
+    }
+  }
+
+  .carousel-selection{
+    cursor: pointer;
+    border-radius: 0px;
+    background: none;
+    border-width: 1px;
+
+    &.active{
+      background-color: #48696b;
+      color: white;
+    }
+
+    &:hover{
+      border-color: $blue-stormy;
     }
   }
 

@@ -92,7 +92,7 @@
           </div>
           <aside class="col-md-3 col-sm-3 col-xs-3">
             <a href="#about" ng-click="ctrl.togglePane()">
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
 
               <div class="panel-body">
                 <i class="fa fa-user-circle fa-3x text-center" aria-hidden="true"></i>
@@ -107,7 +107,7 @@
 
           <aside class="col-md-3 col-sm-3 col-xs-3">
             <a href="#education" ng-click="ctrl.togglePane()">
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
               <div class="panel-body">
                 <i class="fa fa-graduation-cap fa-3x text-center" aria-hidden="true"></i>
                 <h4>Education</h4>
@@ -121,7 +121,7 @@
 
           <aside class="col-md-3 col-sm-3 col-xs-3">
             <a href="#projects" ng-click="ctrl.togglePane()">
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
               <div class="panel-body">
                 <i class="fa fa-keyboard-o fa-3x text-center" aria-hidden="true"></i>
                 <h4>Projects/Volunteer</h4>
@@ -135,7 +135,7 @@
 
           <aside class="col-md-3 col-sm-3 col-xs-3">
             <a href="#resume" ng-click="ctrl.togglePane()">
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
               <div class="panel-body">
                 <i class="fa fa-file-text-o fa-3x text-center" aria-hidden="true"></i>
                 <h4>Resume</h4>
@@ -168,16 +168,32 @@
                 <p>Having grown up in HK for most of my life, I moved to Toronto to attend university.</p>
 
                 <p>One of my passion is playing hockey. To this date yet...I haven't been to a Maple Leafs game (although I went to watch the World Cup of Hockey after my friend got some very last-minute tickets for a decent deal)</p>
-
-                <div class="panel panel-secondary">
-                  <div class="panel-body">
-
-                  <h2><small>Random Fact:</small></h2>
-                  <p>When I lived in Toronto, I commuted back and forth to Waterloo to play hockey. The hockey part was fun...not so much for the commute</p>
-                  </div>
-                </div>
               </figcaption>
           </div>
+
+          <div class="row container-fluid">
+            <aside class="col-md-offset-1 col-md-5">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h4>About Me</h4>
+                </div>
+                <div class="panel-body">
+                  <p>I am a graduated/alumni Electrical Engineering Student from the University of Toronto (1T7+PEY). </p>
+                  <p>Growing up, I played ice and inline hockey and was a big fan of the Pittsburgh Penguins. Now, I'm a Maple Leafs fan.</p>
+                </div>
+              </div>
+            </aside>
+
+            <aside class="col-md-5">
+              <div class="panel panel-primary">
+                <div class="panel-heading"><h4>Where Am I Now</h4></div>
+                <div class="panel-body">
+                  <p>Somewhere where hockey, H<sub>2</sub>O and life exists!</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+
         </header>
 
       </article>
@@ -201,40 +217,55 @@
           </div>
         </header>
 
-        <h3>Courses</h3>
-        <div class="row">
-          <div class="col-md-2"></div>
-
-          <aside class="col-md-4">
-            <div class="panel panel-secondary">
+        <div class="row container-fluid">
+          <aside class="col-md-offset-1 col-md-5">
+            <div class="panel panel-primary">
               <header class="panel-heading">
-                  <h2><small>Electrical</small></h2>
+                  <h4>Courses</h4>
               </header>
               <div class="panel-body">
-              <ul>
-                <li>Digital Logic and Electronics</li>
-                <li>Analog Electronics</li>
-                <li>Mixed Analog Signal Circuits</li>
-                <li>Power Electronics</li>
-              </ul>
+                <p> I have studied a mix of electrical and computer engineering courses
+                </p>
+                <ul>
+                  <li>Digital Logic and Electronics</li>
+                  <li>Analog Electronics</li>
+                  <li>Mixed Analog Signal Circuits</li>
+                  <li>Power Electronics</li>
+                  <li>Operating Systems and Computer Netowrks
+
+                  </li>
+                </ul>
               </div>
             </div>
           </aside>
 
-          <aside class="col-md-4">
-            <div class="panel panel-secondary">
+          <aside class="col-md-5">
+            <div class="panel panel-primary">
               <header class="panel-heading">
-                  <h2><small>Software</small></h2>
+                  <h4>Academic Projects</h4>
               </header>
               <div class="panel-body">
+                <p>Some courses consist of projects to demonstrate knowledge. Here are some of my courses:
+                </p>
               <ul>
-                <li>Networks</li>
-                <li>Operating Systems</li>
+                <li>FPGA- Pong game (Verilog); Car game (Assembly/C)</li>
+                <li>C- Enhancing an existing Operating System (OS161), barebone storage server and chat client</li>
+                <li>Final Design Project- GaN Wall Charger</li>
               </ul>
               </div>
             </div>
           </aside>
+        </div>
 
+        <div class="row container-fluid">
+          <aside class="col-md-offset-1 col-md-10">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><h4>Capstone Project</h4></div>
+              <div class="panel-body">
+                <p>Somewhere where hockey, H<sub>2</sub>O and life exists!</p>
+              </div>
+            </div>
+          </aside>
         </div>
       </article>
 
@@ -243,7 +274,7 @@
           <h1>Projects/Volunteer</h1>
           <div class="row bannerImage">
             <figure>
-              <!-- Video courtesy of Amer Hesson -->
+              <!-- Video courtesy: Amer Hesson -->
               <!-- Code courtesy from imgur -->
               <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline="" class="col-md-6 col-sm-6 col-xs-6">
                 <source src="//i.imgur.com/TIHdbS4.mp4" type="video/mp4">
@@ -255,37 +286,47 @@
 
                 <p>Despite receiveing an electrical degree, I like to be a "well-rounded" engineer; balancing between hardware and software side, gaining experience in both hardware & software projects.</p>
 
-                <p>Below are some of my involvement with clubs around the Skule community:</p>
+                <p>Below are some of my past involvement with clubs around the Skule community:</p>
+
+                <h3>Spark Design Club</h3>
+                <p> Building and designing interactive displays. </p>
+                <p class="text-center"><a class="btn btn-success btn-md" href="http://spark.skule.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Spark Design Club</a></p>
+                <h3>You're Next Career Network</h3>
+                <p>Prepare students for engineering jobs. </p>
+                <p class="text-center"><a class="btn btn-success btn-md" href="http://yourenext.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;You're Next Career Network</a></p>
+
               </figcaption>
             </figure>
           </div>
 
         </header>
         <div class="row">
-          <div class="col-md-2"></div>
-
-          <aside class="col-md-4">
-            <div class="panel panel-secondary">
+          <aside class="col-md-offset-1 col-md-5">
+            <div class="panel panel-primary">
               <header class="panel-heading">
-                  <h2><small>Spark Design Club</small></h2>
+                  <h4>Spark Design Club</h4>
               </header>
               <div class="panel-body">
-              <span class="label label-default">Co-President</span><span class="label label-default">Web & Finance</span>
+              <span class="label label-default-dark">Co-President</span><span class="label label-default-dark">Web & Finance</span>
+              <p>
+                From designing interactive displays to hosting build sessions ("workshops")
+              </p>
+
               <p>Building cool and interactive displays around campus with an Arduino, really.</p>
-              <p class="text-center"><a class="btn btn-success btn-lg" href="http://spark.skule.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Spark Design Club</a></p>
+              <p class="text-center"><a class="btn btn-success-dark btn-md" href="http://spark.skule.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Spark Design Club</a></p>
               </div>
             </div>
           </aside>
 
-          <aside class="col-md-4">
-            <div class="panel panel-secondary">
+          <aside class="col-md-5">
+            <div class="panel panel-primary">
               <header class="panel-heading">
-                  <h2><small>You're Next Career Network</small></h2>
+                  <h4>You're Next Career Network</h4>
               </header>
               <div class="panel-body">
-              <span class="label label-default">Developer</span>
+              <span class="label label-default-dark">Developer</span>
               <p>Developing new features on the website to increase functionality and cater for undegraduate students at UofT.</p>
-              <p class="text-center"><a class="btn btn-success btn-lg" href="http://yourenext.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;You're Next Career Network</a></p>
+              <p class="text-center"><a class="btn btn-success-dark btn-md" href="http://yourenext.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;You're Next Career Network</a></p>
               </div>
             </div>
           </aside>
@@ -294,39 +335,49 @@
 
         <p>Here are some the projects I have collaborated with. Check out my Github account for more info!</p>
         <div class="row text-center">
-          <div class="well col-md-12" id="project-description">
-            <div class="btn-group" role="group">
+          <div class="col-md-12" id="project-description">
+            <!-- <div class="btn-group" role="group">
                 <button type="button" class="btn btn-info btn-md" ng-repeat="(key, project) in ctrl.projects" ng-id="{{key}}" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">{{project.title}}</button>
                 <button type="button" class="btn btn-info btn-md">And Much More!</button>
+            </div> -->
+
+            <div class="row cotainer-fluid">
+              <div class="well col-md-2 carousel-selection" ng-repeat="(key, project) in ctrl.projects" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
+                <h3>{{project.title}}</h3>
+                <span class="label label-default-dark">{{project.organization}}</span>
+              </div>
             </div>
 
-            <article ng-repeat="(key, project) in ctrl.projects" ng-id="{{key}}" ng-if="ctrl.isProject(key)">
-              <h2>
-                <p>{{project.title}}
-                </p>
-                <p><small>{{project.organization}}</small>
-                </p></h2>
-              <p class="col-md-5">{{project.description}}</p>
-              <figure class="col-md-7">
-                <img ng-src="{{project.image.url}}" alt="{{project.image.description}}" class="img-responsive center-block">
-                <figcaption>
-                  {{project.image.description}}
-                </figcaption>
-              </figure>
+            <div class="panel panel-primary" ng-repeat="(key, project) in ctrl.projects" ng-id="{{key}}" ng-if="ctrl.isProject(key)">
+              <header class="panel-heading">
+                  <h4>{{project.title}}</h4>
+              </header>
+              <div class="panel-body">
+                <span class="label label-default-dark">{{project.organization}}</span>
+                <p>{{project.description}}</p>
+                <p class="text-center"><a class="btn btn-success-dark btn-md" href="http://yourenext.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;You're Next Career Network</a></p>
 
-              <div class="clearfix">
-                <div ng-repeat="(title, description) in project.keypoints" class="col-md-4">
-                    <h3>{{title}}</h3>
-                    <p>{{description}}
-                    </p>
+                <div class="clearfix">
+                  <div ng-repeat="(title, description) in project.keypoints" class="col-md-4">
+                      <h3>{{title}}</h3>
+                      <p>{{description}}
+                      </p>
+                  </div>
                 </div>
-              </div>
 
-              <footer class="clearfix">
-                <a class="btn btn-warning" ng-repeat="link in project.links" ng-href="{{link.url}}" target="_blank">
-                  <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;{{link.title}}</a>
-              </footer>
-            </article>
+                <figure class="">
+                  <img ng-src="{{project.image.url}}" alt="{{project.image.description}}" class="img-responsive center-block">
+                  <figcaption>
+                    {{project.image.description}}
+                  </figcaption>
+                </figure>
+
+                <footer class="clearfix">
+                  <a class="btn btn-warning" ng-repeat="link in project.links" ng-href="{{link.url}}" target="_blank">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;{{link.title}}</a>
+                </footer>
+              </div>
+            </div>
           </div>
 
 
@@ -359,19 +410,6 @@
                   However, I am currenty looking at expanding the experience spectrum to involve lower-level languages and to gain exposure into a hardware section.
                 </p>
 
-                <div class="row">
-                  <aside class="col-md-8 col-md-offset-2">
-                    <div class="panel panel-secondary">
-                      <header class="panel-heading">
-                        <h2><small>AdParlor</small></h2>
-                      </header>
-                      <section class="panel-body">
-                        Investigated outstanding bugs. Fixed frontend bugs while relaying any backend bugs to backend developers. Development support for the latest AdMock product.
-                      </section>
-
-                    </div>
-                  </aside>
-                </div>
               </figcaption>
             </figure>
           </div>
