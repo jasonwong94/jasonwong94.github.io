@@ -50,7 +50,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="https://www.github.com/jasonwong94/"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
             <li><a href="https://www.linkedin.com/in/jasonwong94/"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-            <li><a href="./resume.html"><i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="./resume.html"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/jasonwong_94"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
           </ul>
         </section>
       </div>
@@ -166,7 +167,7 @@
                 <span class="label label-default">Toronto</span>
                 <p>After having done some web development, it's about time I put up my personal website. There's more than just me about being a developer. I am an electrical engineer interested in  analog and power circuits on the <a href="https://en.wikipedia.org/wiki/Flyback_converter">fly(back)</a></p>
 
-                <p>Having grown up in HK for most of my life, I moved to Toronto to attend university.</p>
+                <p>Born in Toronto, I have been back and forth between HK and Toronto</p>
 
                 <p>One of my passion is playing hockey. To this date yet...I haven't been to a Maple Leafs game (although I went to watch the World Cup of Hockey after my friend got some very last-minute tickets for a decent deal)</p>
               </figcaption>
@@ -337,13 +338,8 @@
         <p>Here are some the projects I have collaborated with. Check out my Github account for more info!</p>
         <div class="row text-center">
           <div class="col-md-12" id="project-description">
-            <!-- <div class="btn-group" role="group">
-                <button type="button" class="btn btn-info btn-md" ng-repeat="(key, project) in ctrl.projects" ng-id="{{key}}" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">{{project.title}}</button>
-                <button type="button" class="btn btn-info btn-md">And Much More!</button>
-            </div> -->
-
             <div class="row cotainer-fluid">
-              <div class="well col-md-2 carousel-selection" ng-repeat="(key, project) in ctrl.projects" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
+              <div class="well col-md-2 col-sm-2 col-xs-4 carousel-selection" ng-repeat="(key, project) in ctrl.projects" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
                 <h3>{{project.title}}</h3>
                 <span class="label label-default-dark">{{project.organization}}</span>
               </div>
@@ -364,6 +360,9 @@
                       <p>{{description}}
                       </p>
                   </div>
+
+                  <a class="btn btn-warning" ng-repeat="link in project.links" ng-href="{{link.url}}" target="_blank">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;{{link.title}}</a>
                 </div>
 
                 <figure class="">
@@ -374,8 +373,7 @@
                 </figure>
 
                 <footer class="clearfix">
-                  <a class="btn btn-warning" ng-repeat="link in project.links" ng-href="{{link.url}}" target="_blank">
-                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;{{link.title}}</a>
+
                 </footer>
               </div>
             </div>
@@ -428,16 +426,22 @@
 
     <!-- Footer Stuff -->
     <footer class="jumbotron text-center">
-      <p>Jason W</p>
+      <p>Jason Wong</p>
       <div id="contact-icons">
-        <span id="contact-github">
+        <span class="btn-round-3x" id="contact-github">
           <a href="https://github.com/jasonwong94"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
         </span>
-        <span class="contact-linkedin">
+        <span class="btn-round-3x" id="contact-linkedin">
           <a href="https://www.linkedin.com/in/jasonwong94/"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
         </span>
+        <span
+          class="btn-round-3x" id="contact-resume">
+          <a href="/resume.html"><i class="fa fa-briefcase fa-3x" aria-hidden="true"></i></a>
+        </span>
+        <span class="btn-round-3x" id="contact-twitter">
+          <a href="https://twitter.com/jasonwong_94"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+        </span>
       </div>
-      <p><small>Designed with Bootstrap & Angular. Custom design</small></p>
     </footer>
   </body>
 </html>
