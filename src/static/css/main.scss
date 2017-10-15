@@ -3,6 +3,8 @@
 @import "panels.scss";
 @import "labels.scss";
 @import "buttons.scss";
+@import "navbar.scss";
+@import "wells.scss";
 
 body{
 
@@ -106,7 +108,52 @@ body{
 
   footer{
     margin: 0px;
-    background-color: $gray-smoke;
+    background-color: $blue-dark-highlight;
+    color: white;
+    p{
+      color: inherit;
+    }
+
+    .btn-round-3x{
+      display: inline-block;
+      padding-top: 0.5em;
+      width: 4.5em;
+      height: 4.5em;
+      background-color: white;
+      border-radius: 50%;
+      border: 0.2em solid white;
+    }
+
+    #contact-github{
+      > a {color: $green-estatic;}
+      &:hover{
+        border-color: $green-estatic;
+      }
+    }
+
+    #contact-linkedin{
+      > a {color: $yellow-dijon-mustard;}
+      &:hover{
+        border-color: $yellow-dijon-mustard;
+      }
+    }
+
+    #contact-resume{
+      > a {color: $orange;}
+      &:hover{
+        border-color: $orange;
+      }
+
+    }
+
+    #contact-twitter{
+      > a {
+        color: $blue-estatic;
+      }
+      &:hover{
+        border-color: $blue-estatic;
+      }
+    }
   }
 
 

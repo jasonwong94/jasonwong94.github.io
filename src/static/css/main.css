@@ -28,14 +28,16 @@ h2 > small {
   .panel-primary .panel-heading {
     border-color: #08858a;
     color: #08858a; }
+  .panel-primary:hover {
+    box-shadow: 2px 2px 2px #ADCED6; }
 
 .panel-secondary {
   box-shadow: 2px 2px 2px whitesmoke; }
-  .panel-secondary h2 > small {
-    color: #29A10A; }
   .panel-secondary .panel-heading {
     border-color: #29A10A;
     color: #29A10A; }
+  .panel-secondary:hover {
+    box-shadow: 2px 2px 2px #9AB393; }
   .panel-secondary .label-default {
     background-color: #29A10A; }
   .panel-secondary .btn-success, .panel-secondary .btn-secondary {
@@ -50,6 +52,9 @@ h2 > small {
   .panel-tertiary h2 > small {
     color: #b4b701; }
 
+.label {
+  display: inline-block; }
+
 .label-default {
   background-color: #00cdd6; }
 
@@ -61,11 +66,11 @@ h2 > small {
 
 .btn-primary, .open {
   background: none;
-  color: #00cdd6;
+  color: #08858a;
   border: 1px solid gray; }
   .btn-primary:hover, .open:hover {
     border-color: #08858a;
-    color: #00cdd6;
+    color: #08858a;
     background: none; }
   .btn-primary.active, .open.active {
     background-color: #08858a;
@@ -106,6 +111,28 @@ h2 > small {
   .btn-warning:hover, .btn-tertiary:hover {
     background-color: #e1e40a;
     color: white; }
+
+.navbar-collapse.in {
+  overflow-y: inherit; }
+
+.menu-button-group {
+  display: inline-block;
+  background-color: #f0f8f9;
+  padding-right: 10px; }
+  .menu-button-group > .navbar-nav {
+    display: inherit; }
+
+.well {
+  background: none;
+  border-color: lightgray; }
+
+.well-primary {
+  background: none;
+  border-color: #ADCED6; }
+
+.well-secondary {
+  background: none;
+  border-color: #9AB393; }
 
 #customStyle body {
   position: relative; }
@@ -159,7 +186,34 @@ h2 > small {
     padding-top: 50px; }
 #customStyle footer {
   margin: 0px;
-  background-color: #f0f8f9; }
+  background-color: #025d61;
+  color: white; }
+  #customStyle footer p {
+    color: inherit; }
+  #customStyle footer .btn-round-3x {
+    display: inline-block;
+    padding-top: 0.5em;
+    width: 4.5em;
+    height: 4.5em;
+    background-color: white;
+    border-radius: 50%;
+    border: 0.2em solid white; }
+  #customStyle footer #contact-github > a {
+    color: #2dd075; }
+  #customStyle footer #contact-github:hover {
+    border-color: #2dd075; }
+  #customStyle footer #contact-linkedin > a {
+    color: #e1e40a; }
+  #customStyle footer #contact-linkedin:hover {
+    border-color: #e1e40a; }
+  #customStyle footer #contact-resume > a {
+    color: #e2be3b; }
+  #customStyle footer #contact-resume:hover {
+    border-color: #e2be3b; }
+  #customStyle footer #contact-twitter > a {
+    color: #00cdd6; }
+  #customStyle footer #contact-twitter:hover {
+    border-color: #00cdd6; }
 #customStyle #project-description article {
   padding-top: 20px; }
 #customStyle #project-description footer {

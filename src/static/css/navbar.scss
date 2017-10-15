@@ -1,0 +1,16 @@
+//allow dropdown buttons to be shown
+@import "colours.scss";
+
+.navbar-collapse.in{
+  overflow-y: inherit;
+}
+
+.menu-button-group{
+  display: inline-block;
+  background-color: $gray-smoke;
+  padding-right: 10px;
+
+  > .navbar-nav{
+    display: inherit;
+  }
+}

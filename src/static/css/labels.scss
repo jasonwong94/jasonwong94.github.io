@@ -1,5 +1,9 @@
 @import "colours.scss";
 
+.label{
+  display: inline-block;
+}
+
 .label-default{
   background-color: $blue-estatic;
 }

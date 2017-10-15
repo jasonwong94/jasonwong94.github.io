@@ -1,0 +1,18 @@
+@import "colours.scss";
+
+//CSS for the wells
+
+.well,{
+  background: none;
+  border-color: lightgray;
+}
+
+.well-primary{
+  background: none;
+  border-color: $blue-grayish;
+}
+
+.well-secondary{
+  background: none;
+  border-color: $green-grayish;
+}

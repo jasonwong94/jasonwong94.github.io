@@ -20,18 +20,22 @@
       color: $blue-stormy;
     }
 
+    &:hover{
+      box-shadow: 2px 2px 2px $blue-grayish;
+    }
+
   }
 
   .panel-secondary{
     box-shadow: 2px 2px 2px whitesmoke;
 
-    h2 > small{
-      color: $green-pepper;
-    }
-
     .panel-heading{
       border-color: $green-pepper;
       color: $green-pepper;
+    }
+
+    &:hover{
+      box-shadow: 2px 2px 2px $green-grayish;
     }
 
     .label-default{
