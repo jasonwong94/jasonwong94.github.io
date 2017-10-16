@@ -29,7 +29,7 @@
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="30" ng-controller="mainPageController as ctrl" id="customStyle" class="controller-fluid" ng-cloak>
     <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top" id="navbar" ng-hide="ctrl.isDialogOpen">
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
       <div class="container-fluid">
         <header class="navbar-header">
           <a class="navbar-brand" href="#" id="openDialog" ng-click="ctrl.togglePane()">Jason Wong</a>
@@ -48,7 +48,7 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://www.github.com/jasonwong94/"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.github.com/jasonwong94/" id="github"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
             <li><a href="https://www.linkedin.com/in/jasonwong94/"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
             <li><a href="./resume.html"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i></a></li>
             <li><a href="https://twitter.com/jasonwong_94"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
@@ -59,7 +59,7 @@
     </nav>
 
     <!-- Interactive stuff -->
-    <header class="jumbotron" id="interactiveStart" ng-hide="!ctrl.isDialogOpen">
+    <header class="jumbotron" id="interactiveStart" ng-hide="!ctrl.isDialogOpen" style="display:none">
       <div class="container-fluid">
         <div class="text-right"><a href="#" ng-click="ctrl.togglePane()" id="closeDialog">X</a></div>
         <section  ng-if="!ctrl.isSubmitted">
@@ -153,7 +153,7 @@
     </header>
 
     <!-- Content Stuff -->
-    <section class="container-fluid" id="content" ng-if="!ctrl.isDialogOpen">
+    <section class="container-fluid" id="content">
       <article id="about">
         <header>
           <h1>About Me</h1>
@@ -162,9 +162,10 @@
               <img src="/src/static/images/hockey.jpg" class="img-responsive col-md-6" />
 
               <figcaption class="col-md-6">
-                <h2>Howdy <span class="name">{{ctrl.name}}. Welcome to my website</span></h2>
-                <span class="label label-default">HK</span>
-                <span class="label label-default">Toronto</span>
+                <h2>Howdy</h2>
+                <h2><small class=" primary">{{ctrl.name}}. Welcome to my website</small></h2>
+                <span class="label label-first">HK</span>
+                <span class="label label-first">Toronto</span>
                 <p>After having done some web development, it's about time I put up my personal website. There's more than just me about being a developer. I am an electrical engineer interested in  analog and power circuits on the <a href="https://en.wikipedia.org/wiki/Flyback_converter">fly(back)</a></p>
 
                 <p>Born in Toronto, I have been back and forth between HK and Toronto</p>
@@ -209,7 +210,8 @@
 
               <figcaption class="col-md-6">
                 <h2>Electrical Engineering</h2>
-                <span class="label label-default">BASc | University of Toronto</span>
+                <h2><small class="secondary">Class of 2017</small></h2>
+                <span class="label label-second">BASc | University of Toronto</span>
 
                 <p>I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. My interests are power and analog electronics. My 4th Year Capstone Project was designing a USB C Wall Charger utilizing Gallium Nitride (GaN) transistors</p>
 
@@ -282,9 +284,10 @@
                 <source src="//i.imgur.com/TIHdbS4.mp4" type="video/mp4">
               </video>
               <figcaption class="col-md-6">
-                <h2>Web Development, Arduino</h2>
-                <span class="label label-default">You're Next Career Network</span>
-                <span class="label label-default">Spark Design Club</span>
+                <h2>Web Development, Circuitry</h2>
+                <h2><small class="tertiary">I like to build</small></h2>
+                <span class="label label-third">You're Next Career Network</span>
+                <span class="label label-third">Spark Design Club</span>
 
                 <p>Despite receiveing an electrical degree, I like to be a "well-rounded" engineer; balancing between hardware and software side, gaining experience in both hardware & software projects.</p>
 
@@ -395,11 +398,12 @@
                 </script>
 
               <figcaption class="col-md-6">
-                <h2>Currently seeking hardware experience</h2>
+                <h2>Software Internships</h2>
+                <h2><small class="quartenary">Currently seeking hardware experience</small></h2>
                 <!-- Please hire me Texas Instruments, Analog Devices or ONSemi... or any awesome hardware company -->
-                <span class="label label-default">AdParlor</span>
-                <span class="label label-default">D2L</span>
-                <span class="label label-default">University of Toronto</span>
+                <span class="label label-fourth">AdParlor</span>
+                <span class="label label-fourth">D2L</span>
+                <span class="label label-fourth">University of Toronto</span>
 
                 <p>
                   The majority of my experience lies in the software industry, develpoing web-based applications on the front-end side.
