@@ -8,10 +8,22 @@
   background-color: $blue-estatic;
 }
 
-.label-default-dark{
-  background-color: $blue-stormy;
+.label-primary, .label-first{
+  background-color: $green-estatic;
 }
 
-.label-tertiary{
+.label-secondary, .label-second{
   background-color: $yellow-dijon-mustard;
+}
+
+.label-tertiary, .label-third{
+  background-color: $orange;
+}
+
+.label-quartenary, .label-fourth{
+  background-color: $blue-estatic;
+}
+
+.label-default-dark{
+  background-color: $blue-stormy;
 }

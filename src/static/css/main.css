@@ -14,6 +14,15 @@ h2 {
 h2 > small {
   color: #29A10A; }
 
+small.primary {
+  color: #2dd075; }
+small.secondary {
+  color: #e1e40a; }
+small.tertiary {
+  color: #e2be3b; }
+small.quartenary {
+  color: #00cdd6; }
+
 .panel {
   border-radius: 1px;
   border-color: lightgray; }
@@ -58,11 +67,20 @@ h2 > small {
 .label-default {
   background-color: #00cdd6; }
 
+.label-primary, .label-first {
+  background-color: #2dd075; }
+
+.label-secondary, .label-second {
+  background-color: #e1e40a; }
+
+.label-tertiary, .label-third {
+  background-color: #e2be3b; }
+
+.label-quartenary, .label-fourth {
+  background-color: #00cdd6; }
+
 .label-default-dark {
   background-color: #08858a; }
-
-.label-tertiary {
-  background-color: #e1e40a; }
 
 .btn-primary, .open {
   background: none;
@@ -134,6 +152,14 @@ h2 > small {
   background: none;
   border-color: #9AB393; }
 
+#customStyle .fa-github:hover {
+  color: #2dd075; }
+#customStyle .fa-linkedin:hover {
+  color: #e1e40a; }
+#customStyle .fa-briefcase:hover {
+  color: #e2be3b; }
+#customStyle .fa-twitter:hover {
+  color: #00cdd6; }
 #customStyle body {
   position: relative; }
 #customStyle .navbar {

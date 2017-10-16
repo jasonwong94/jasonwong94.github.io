@@ -6,11 +6,24 @@
 @import "navbar.scss";
 @import "wells.scss";
 
-body{
-
-}
 
 #customStyle{
+
+  .fa-github:hover{
+    color: $green-estatic;
+  }
+
+  .fa-linkedin:hover{
+    color: $yellow-dijon-mustard;
+  }
+
+  .fa-briefcase:hover{
+    color: $orange;
+  }
+
+  .fa-twitter:hover{
+    color: $blue-estatic;
+  }
 
   body{
     position: relative;

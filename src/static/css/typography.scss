@@ -19,3 +19,21 @@ h2{
 h2 > small{
   color: $green-pepper;
 }
+
+small{
+  &.primary{
+      color:$green-estatic;
+  }
+
+  &.secondary{
+    color: $yellow-dijon-mustard;
+  }
+
+  &.tertiary{
+    color: $orange;
+  }
+
+  &.quartenary{
+    color: $blue-estatic;
+  }
+}
