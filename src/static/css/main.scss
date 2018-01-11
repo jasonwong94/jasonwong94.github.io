@@ -183,6 +183,24 @@
     h3 {
       font-weight: 100;
     }
+
+    .project-image{
+      width: 80%;
+    }
+
+    .btn-group {
+      &.open{
+        border: none;
+      }
+    }
+
+    .dropdown-menu{
+      .project-dropdown-menu{
+        border-bottom: 1px solid lightgray;
+        max-height: 250px;
+        overflow-y: scroll;
+      }
+    }
   }
 
   .bannerImage{

@@ -72,7 +72,8 @@ small.quartenary {
   background-color: #2dd075; }
 
 .label-secondary, .label-second {
-  background-color: #e1e40a; }
+  background-color: #e1e40a;
+  color: #7a7b15; }
 
 .label-tertiary, .label-third {
   background-color: #e2be3b; }
@@ -125,11 +126,11 @@ small.quartenary {
 
 .btn-warning, .btn-tertiary {
   border-color: #e1e40a;
-  color: #b4b701;
-  background-color: white; }
+  color: #7a7b15;
+  background-color: #e1e40a; }
   .btn-warning:hover, .btn-tertiary:hover {
     background-color: #e1e40a;
-    color: white; }
+    color: black; }
 
 .navbar-collapse.in {
   overflow-y: inherit; }
@@ -249,6 +250,14 @@ small.quartenary {
   color: #025d61; }
 #customStyle #project-description h3 {
   font-weight: 100; }
+#customStyle #project-description .project-image {
+  width: 80%; }
+#customStyle #project-description .btn-group.open {
+  border: none; }
+#customStyle #project-description .dropdown-menu .project-dropdown-menu {
+  border-bottom: 1px solid lightgray;
+  max-height: 250px;
+  overflow-y: scroll; }
 #customStyle .bannerImage {
   background-color: #104344;
   margin-bottom: 30px;

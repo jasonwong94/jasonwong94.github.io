@@ -293,13 +293,6 @@
 
                 <p>Below are some of my past involvement with clubs around the Skule community:</p>
 
-                <h3>Spark Design Club</h3>
-                <p> Building and designing interactive displays. </p>
-                <p class="text-center"><a class="btn btn-success btn-md" href="http://spark.skule.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Spark Design Club</a></p>
-                <h3>You're Next Career Network</h3>
-                <p>Prepare students for engineering jobs. </p>
-                <p class="text-center"><a class="btn btn-success btn-md" href="http://yourenext.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;You're Next Career Network</a></p>
-
               </figcaption>
             </figure>
           </div>
@@ -356,7 +349,7 @@
                 </button>
 
                 <ul class="dropdown-menu" role="menu">
-                  <li ng-repeat="(key, project) in ctrl.projects" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
+                  <li ng-repeat="(key, project) in ctrl.projects" class="project-dropdown-menu" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
                     <a href="javascript:void(0)">
                       <h5>{{project.title}}</h5>
                       <span class="label label-default-dark">{{project.organization}}</span>
@@ -380,19 +373,22 @@
                 <p>{{project.description}}</p>
                 <p class="text-center"><a class="btn btn-success-dark btn-md" href="http://yourenext.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;You're Next Career Network</a></p>
 
-                <div class="clearfix">
+                <div class="row">
                   <div ng-repeat="(title, description) in project.keypoints" class="col-md-4">
                       <h3>{{title}}</h3>
                       <p>{{description}}
                       </p>
                   </div>
+                </div>
 
-                  <a class="btn btn-warning" ng-repeat="link in project.links" ng-href="{{link.url}}" target="_blank">
-                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;{{link.title}}</a>
+                <div class="row">
+                  <button type="button" class="btn btn-warning" ng-repeat="link in project.links" ng-href="{{link.url}}" target="_blank" style="margin-left:5px; margin-right:5px">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;{{link.title}}
+                  </button>
                 </div>
 
                 <figure class="">
-                  <img ng-src="{{project.image.url}}" alt="{{project.image.description}}" class="img-responsive center-block">
+                  <img ng-src="{{project.image.url}}" alt="{{project.image.description}}" class="img-responsive center-block project-image">
                   <figcaption>
                     {{project.image.description}}
                   </figcaption>
