@@ -59,11 +59,11 @@
 
   .btn-warning, .btn-tertiary{
     border-color: $yellow-dijon-mustard;
-    color: $yellow-mustard;
-    background-color: white;
+    color: $khaki;
+    background-color: $yellow-dijon-mustard;
 
     &:hover{
       background-color: $yellow-dijon-mustard;
-      color: white;
+      color: black;
     }
   }
