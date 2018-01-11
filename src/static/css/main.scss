@@ -35,16 +35,16 @@
     border-color: lightgray;
 
     &.navbar a{
-      color: $blue-dark-highlight;
+      color: $blue-stormy;
     }
 
     & li.active > a{
-      background-color: $blue-dark-highlight;
+      background-color: $blue-stormy;
       color: white;
     }
 
     &.navbar .navbar-right a{
-      color: $blue-dark-highlight;
+      color: $blue-stormy;
     }
   }
 
@@ -186,7 +186,7 @@
   }
 
   .bannerImage{
-    background-color: #032829;
+    background-color: #104344;
     margin-bottom: 30px;
     color: lightgray;
 
@@ -196,7 +196,7 @@
     }
 
     p{
-      color: #a2a2a2;
+      color: #c6e7e8;
     }
   }
 

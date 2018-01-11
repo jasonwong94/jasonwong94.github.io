@@ -36,7 +36,8 @@ small.quartenary {
   box-shadow: 2px 2px 2px whitesmoke; }
   .panel-primary .panel-heading {
     border-color: #08858a;
-    color: #08858a; }
+    color: white;
+    background-color: #08858a; }
   .panel-primary:hover {
     box-shadow: 2px 2px 2px #ADCED6; }
 
@@ -167,12 +168,12 @@ small.quartenary {
   border-bottom-width: 1px;
   border-color: lightgray; }
   #customStyle .navbar.navbar a {
-    color: #025d61; }
+    color: #08858a; }
   #customStyle .navbar li.active > a {
-    background-color: #025d61;
+    background-color: #08858a;
     color: white; }
   #customStyle .navbar.navbar .navbar-right a {
-    color: #025d61; }
+    color: #08858a; }
 #customStyle #interactiveStart {
   background-color: #013335;
   position: fixed;
@@ -249,14 +250,14 @@ small.quartenary {
 #customStyle #project-description h3 {
   font-weight: 100; }
 #customStyle .bannerImage {
-  background-color: #032829;
+  background-color: #104344;
   margin-bottom: 30px;
   color: lightgray; }
   #customStyle .bannerImage img {
     padding: 0px;
     opacity: 0.7; }
   #customStyle .bannerImage p {
-    color: #a2a2a2; }
+    color: #c6e7e8; }
 #customStyle .carousel-selection {
   cursor: pointer;
   border-radius: 0px;

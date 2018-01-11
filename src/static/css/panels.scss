@@ -17,7 +17,8 @@
 
     .panel-heading{
       border-color: $blue-stormy;
-      color: $blue-stormy;
+      color: white;
+      background-color: $blue-stormy;
     }
 
     &:hover{

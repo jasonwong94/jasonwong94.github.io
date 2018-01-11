@@ -341,12 +341,35 @@
         <p>Here are some the projects I have collaborated with. Check out my Github account for more info!</p>
         <div class="row text-center">
           <div class="col-md-12" id="project-description">
-            <div class="row cotainer-fluid">
-              <div class="well col-md-2 col-sm-2 col-xs-4 carousel-selection" ng-repeat="(key, project) in ctrl.projects" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
+            <div class="btn-group btn-group-justified hidden-xs">
+              <a href="javascript:void(0)" class="btn btn-primary" ng-repeat="(key, project) in ctrl.projects" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
                 <h3>{{project.title}}</h3>
                 <span class="label label-default-dark">{{project.organization}}</span>
+              </a>
+            </div>
+
+            <div class="row">
+              <div class="btn-group visible-xs-block">
+                <button type="button" class="btn btn-primary">Projects</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu" role="menu">
+                  <li ng-repeat="(key, project) in ctrl.projects" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
+                    <a href="javascript:void(0)">
+                      <h5>{{project.title}}</h5>
+                      <span class="label label-default-dark">{{project.organization}}</span>
+                    </a>
+                  </li>
+                </ul>
+                <!-- <a href="javascript:void(0)" class="btn btn-primary btn-xs" ng-repeat="(key, project) in ctrl.projects" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
+                  <h5>{{project.title}}</h5>
+                  <span class="label label-default-dark">{{project.organization}}</span>
+                </a> -->
               </div>
             </div>
+
 
             <div class="panel panel-primary" ng-repeat="(key, project) in ctrl.projects" ng-id="{{key}}" ng-if="ctrl.isProject(key)">
               <header class="panel-heading">
