@@ -14,6 +14,9 @@ h2 {
 h2 > small {
   color: #29A10A; }
 
+.col-title {
+  color: #08858a; }
+
 small.primary {
   color: #2dd075; }
 small.secondary {
@@ -24,13 +27,12 @@ small.quartenary {
   color: #00cdd6; }
 
 .panel {
-  border-radius: 1px;
-  border-color: lightgray; }
+  border: none; }
   .panel .panel-heading {
-    background-color: whitesmoke;
-    border-color: darkgray;
-    border-width: 2px;
-    color: gray; }
+    background-color: white;
+    border-bottom-color: lightgray;
+    border-width: 1px;
+    color: #08858a; }
 
 .panel-primary {
   box-shadow: 2px 2px 2px whitesmoke; }

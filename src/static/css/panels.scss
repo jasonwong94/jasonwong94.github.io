@@ -1,14 +1,13 @@
 @import "colours.scss";
 
   .panel{
-    border-radius: 1px;
-    border-color: lightgray;
+    border: none;
 
     .panel-heading{
-      background-color: whitesmoke;
-      border-color: darkgray;
-      border-width: 2px;
-      color: gray;
+      background-color: white;
+      border-bottom-color: lightgray;
+      border-width: 1px;
+      color: $blue-stormy;
     }
   }
 
