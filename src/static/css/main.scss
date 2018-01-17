@@ -7,6 +7,12 @@
 @import "wells.scss";
 
 
+.btn-group{
+  a > *{
+    white-space: normal;
+  }
+}
+
 #customStyle{
 
   .fa-github:hover{
@@ -28,6 +34,12 @@
   body{
     position: relative;
   }
+
+  video{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
 
   .navbar{
     background-color: white;

@@ -156,6 +156,9 @@ small.quartenary {
   background: none;
   border-color: #9AB393; }
 
+.btn-group a > * {
+  white-space: normal; }
+
 #customStyle .fa-github:hover {
   color: #2dd075; }
 #customStyle .fa-linkedin:hover {
@@ -166,6 +169,9 @@ small.quartenary {
   color: #00cdd6; }
 #customStyle body {
   position: relative; }
+#customStyle video {
+  padding-left: 0px;
+  padding-right: 0px; }
 #customStyle .navbar {
   background-color: white;
   border-bottom-width: 1px;
