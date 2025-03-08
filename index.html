@@ -1,369 +1,40 @@
 <!DOCTYPE html>
-<html ng-app="jasonwong94-mainpage">
-  <head>
-    <title>Jason Wong</title>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Bulma!</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	</head>
+	<body>
+		<section class="hero" id = "intro">
+			<div class="hero-body" id="about">
+				<div class="title">
+						Hello World!
+				</div>
+				<p class="subtitle">
+					I am a hardware and software developer with industrial experience in Field Programmable Arrays (FPGA), currently based within the semiconductor industry in Hong Kong.
+				</p>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!--  Font Awesome-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- Angular JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-
-    <!-- Custom stylesheets & Scripts -->
-    <link rel="stylesheet" href="./src/static/css/main.css">
-    <script src="./src/index.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Google Maps  -->
-    <script src="./googleMaps.js"></script>
-</script>
-
-  </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="30" ng-controller="mainPageController as ctrl" id="customStyle" class="controller-fluid" ng-cloak>
-    <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
-      <div class="container-fluid">
-        <header class="navbar-header">
-          <a class="navbar-brand" href="#" id="openDialog" ng-click="ctrl.togglePane()">Jason Wong</a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </header>
-        <section class="collapse navbar-collapse" id="collapse-menu">
-          <ul class="nav navbar-nav">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://www.github.com/jasonwong94/" id="github"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/jasonwong94/"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-            <li><a href="./resume.html"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/jasonwong_94"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-          </ul>
-        </section>
-      </div>
-
-    </nav>
-
-    <!-- Content Stuff -->
-    <section class="container-fluid" id="content">
-      <article id="about">
-        <header>
-          <h1>About Me</h1>
-          <div class="row bannerImage">
-            <figure>
-              <img src="/src/static/images_compressed/hockey.jpg" class="img-responsive col-md-6" />
-
-              <figcaption class="col-md-6">
-                <h2>Howdy</h2>
-                <h2><small class=" primary">Welcome to my website</small></h2>
-                <span class="label label-first">HK</span>
-                <span class="label label-first">Toronto</span>
-                <p>After having done some web development, it's about time I put up my personal website. There's more than just me about being a developer. I am an electrical engineer interested in  analog and power circuits on the <a href="https://en.wikipedia.org/wiki/Flyback_converter">fly(back)</a></p>
-
-                <p>Born in Toronto, I have been back and forth between HK and Toronto</p>
-
-                <p>One of my passion is playing hockey. To this date yet...I haven't been to a Maple Leafs game (although I went to watch the World Cup of Hockey after my friend got some very last-minute tickets for a decent deal)</p>
-              </figcaption>
-          </div>
-
-          <div class="row container-fluid">
-            <aside class="col-md-offset-1 col-md-5">
-
-              <div class="row text-center col-title">
-                <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
-                <h4>Electrical Engineering Student</h4>
-              </div>
-
-              <p>I am a graduated/alumni Electrical Engineering Student from the University of Toronto (1T7+PEY). </p>
-            </aside>
-
-            <aside class="col-md-5">
-
-              <div class="row text-center col-title">
-                <i class="fa fa-male fa-2x" aria-hidden="true"></i>
-                <h4>Hockey</h4>
-              </div>
-              <p>Growing up, I played ice and inline hockey and was a big fan of the Pittsburgh Penguins. Now, I'm a Maple Leafs fan.</p>
-            </aside>
-          </div>
-
-        </header>
-
-      </article>
-
-      <article id="education">
-        <header>
-          <h1>Education</h1>
-          <div class="row bannerImage">
-            <figure>
-              <img src="/src/static/images_compressed/FroshWeek.jpg" class="img-responsive col-md-6" />
-
-              <figcaption class="col-md-6">
-                <h2>Electrical Engineering</h2>
-                <h2><small class="secondary">Class of 2017</small></h2>
-                <span class="label label-second">BASc | University of Toronto</span>
-
-                <p>I am a graduating Electrical Engineering Student (1T6 + PEY) from the University of Toronto. My interests are power and analog electronics. My 4th Year Capstone Project was designing a USB C Wall Charger utilizing Gallium Nitride (GaN) transistors</p>
-
-                <p>As mentioned my interest is in power and analog electronics. During my free time, I like to read and understand power electronics from topologies such as quasi-resonant flyback, resonant to understanding how feedback circuits work.</p>
-              </figcaption>
-            </figure>
-          </div>
-        </header>
-
-        <div class="row container-fluid">
-          <aside class="col-md-offset-1 col-md-5">
-            <div class="row text-center col-title">
-              <i class="fa fa-2x fa-microchip" aria-hidden="true"></i>
-              <h4>Courses</h4>
-            </div>
-            <p> I have studied a mix of electrical and computer engineering courses
-            </p>
-            <ul>
-              <li>Digital Logic and Electronics</li>
-              <li>Analog Electronics</li>
-              <li>Mixed Analog Signal Circuits</li>
-              <li>Power Electronics</li>
-              <li>Operating Systems and Computer Netowrks</li>
-            </ul>
-          </aside>
-
-          <aside class="col-md-5">
-            <div class="row text-center col-title">
-              <i class="fa fa-2x fa-microchip" aria-hidden="true"></i>
-              <h4>Academic Projects</h4>
-            </div>
-            <p>Some courses consist of projects to demonstrate knowledge. Here are some of my courses:</p>
-            <ul>
-              <li>FPGA- Pong game (Verilog); Car game (Assembly/C)</li>
-              <li>C- Enhancing an existing Operating System (OS161), barebone storage server and chat client</li>
-              <li>Final Design Project- GaN Wall Charger</li>
-            </ul>
-          </aside>
-        </div>
-      </article>
-
-      <article id="projects">
-        <header>
-          <h1>Projects/Volunteer</h1>
-          <div class="row bannerImage">
-            <figure>
-              <!-- Video courtesy: Amer Hesson -->
-              <!-- Code courtesy from imgur -->
-              <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline="" class="col-md-6 col-sm-12 col-xs-12">
-                <source src="//i.imgur.com/TIHdbS4.mp4" type="video/mp4">
-              </video>
-              <figcaption class="col-md-6">
-                <h2>Web Development, Circuitry</h2>
-                <h2><small class="tertiary">I like to build</small></h2>
-                <span class="label label-third">You're Next Career Network</span>
-                <span class="label label-third">Spark Design Club</span>
-
-                <p>Despite receiveing an electrical degree, I like to be a "well-rounded" engineer; balancing between hardware and software side, gaining experience in both hardware & software projects.</p>
-
-                <p>Below are some of my past involvement with clubs around the Skule community:</p>
-
-              </figcaption>
-            </figure>
-          </div>
-
-        </header>
-        <div class="row">
-          <aside class="col-md-offset-1 col-md-5">
-            <div class="panel">
-              <header class="panel-heading text-center">
-                  <h4>Spark Design Club</h4>
-              </header>
-              <div class="panel-body">
-                <div class="row text-center">
-                  <i class="fa fa-user fa-2x" aria-hidden="true"></i><br /><span class="label label-default-dark">Co-President</span><span class="label label-default-dark">Web & Finance</span>
-                </div>
-                <div class="row text-center">
-                    <i class="fa fa-calendar fa-lg" aria-hidden="true"></i> <br />2014-17
-                </div>
-
-              <p>
-                From designing interactive displays to hosting build sessions ("workshops")
-              </p>
-
-              <p>Building cool and interactive displays around campus with an Arduino, really.</p>
-              <p class="text-center"><a class="btn btn-success-dark btn-md" href="http://spark.skule.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Spark Design Club</a></p>
-              </div>
-            </div>
-          </aside>
-
-          <aside class="col-md-5">
-            <div class="panel">
-              <header class="panel-heading text-center">
-                  <h4>You're Next Career Network</h4>
-              </header>
-              <div class="panel-body">
-                <div class="row text-center">
-                    <i class="fa fa-user fa-2x" aria-hidden="true"></i><br /><span class="label label-default-dark">Developer</span>
-                </div>
-                <div class="row text-center">
-                    <i class="fa fa-calendar fa-lg" aria-hidden="true"></i><br />2016-17
-                </div>
-
-              <p>Developing new features on the website to increase functionality and cater for undegraduate students at UofT.</p>
-              <p class="text-center"><a class="btn btn-success-dark btn-md" href="http://yourenext.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;You're Next Career Network</a></p>
-              </div>
-            </div>
-          </aside>
-
-        </div>
-
-        <p>Here are some the projects I have collaborated with. Check out my Github account for more info!</p>
-        <div class="row text-center">
-          <div class="col-md-12" id="project-description">
-            <div class="btn-group btn-group-justified hidden-xs">
-              <a href="javascript:void(0)" class="btn btn-primary" ng-repeat="(key, project) in ctrl.projects" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
-                <h3>{{project.title}}</h3>
-                <span class="label label-default-dark">{{project.organization}}</span>
-              </a>
-            </div>
-
-            <div class="row">
-              <div class="btn-group visible-xs-block">
-                <button type="button" class="btn btn-primary">Projects</button>
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                  <span class="caret"></span>
-                </button>
-
-                <ul class="dropdown-menu" role="menu">
-                  <li ng-repeat="(key, project) in ctrl.projects" class="project-dropdown-menu" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
-                    <a href="javascript:void(0)">
-                      <h5>{{project.title}}</h5>
-                      <span class="label label-default-dark">{{project.organization}}</span>
-                    </a>
-                  </li>
-                </ul>
-                <!-- <a href="javascript:void(0)" class="btn btn-primary btn-xs" ng-repeat="(key, project) in ctrl.projects" ng-click="ctrl.selectProject(key)" ng-class="{'active':ctrl.isProject(key)}">
-                  <h5>{{project.title}}</h5>
-                  <span class="label label-default-dark">{{project.organization}}</span>
-                </a> -->
-              </div>
-            </div>
-
-
-            <div class="panel panel-primary" ng-repeat="(key, project) in ctrl.projects" ng-id="{{key}}" ng-if="ctrl.isProject(key)">
-              <header class="panel-heading">
-                  <h4>{{project.title}}</h4>
-              </header>
-              <div class="panel-body">
-                <div class="row">
-                  <i class="fa fa-users fa-2x" aria-hidden="true"></i><br />
-                  <span class="label label-default-dark">{{project.organization}}</span>
-                </div>
-                <p>{{project.description}}</p>
-                <p class="text-center"><a class="btn btn-success-dark btn-md" href="http://yourenext.ca" role="button" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;You're Next Career Network</a></p>
-
-                <div class="row">
-                  <div ng-repeat="(title, description) in project.keypoints" class="col-md-4">
-                      <h3>{{title}}</h3>
-                      <p>{{description}}
-                      </p>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <button type="button" class="btn btn-warning" ng-repeat="link in project.links" ng-href="{{link.url}}" target="_blank" style="margin-left:5px; margin-right:5px">
-                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;{{link.title}}
-                  </button>
-                </div>
-
-                <figure class="">
-                  <img ng-src="{{project.image.url}}" alt="{{project.image.description}}" class="img-responsive center-block project-image">
-                  <figcaption>
-                    {{project.image.description}}
-                  </figcaption>
-                </figure>
-
-                <footer class="clearfix">
-
-                </footer>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </article>
-
-      <article id="resume">
-        <header>
-          <h1>Resume</h1>
-          <div class="row bannerImage">
-
-            <figure>
-              <div id="map" class="col-md-6"></div>
-                <script async defer
-                src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyB573n2A0o3QaYyqVsikRjq_5KPS0fr5nU&callback=initMap">
-                </script>
-
-              <figcaption class="col-md-6">
-                <h2>Software Internships</h2>
-                <h2><small class="quartenary">Currently seeking hardware experience</small></h2>
-                <!-- Please hire me Texas Instruments, Analog Devices or ONSemi... or any awesome hardware company -->
-                <span class="label label-fourth">AdParlor</span>
-                <span class="label label-fourth">D2L</span>
-                <span class="label label-fourth">University of Toronto</span>
-
-                <p>
-                  The majority of my experience lies in the software industry, develpoing web-based applications on the front-end side.
-                </p>
-
-                <p>
-                  However, I am currenty looking at expanding the experience spectrum to involve lower-level languages and to gain exposure into a hardware section.
-                </p>
-
-              </figcaption>
-            </figure>
-          </div>
-          <p class="text-center">Click below to access my resume!</p>
-          <p class="text-center"><a class="btn btn-info btn-lg" href="./resume.html" role="button">Resume</a></p>
-        </header>
-
-        <div class="row">
-
-        </div>
-
-
-      </article>
-    </section>
-
-    <!-- Footer Stuff -->
-    <footer class="jumbotron text-center">
-      <p>Jason Wong</p>
-      <div id="contact-icons">
-        <span class="btn-round-3x" id="contact-github">
-          <a href="https://github.com/jasonwong94"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-        </span>
-        <span class="btn-round-3x" id="contact-linkedin">
-          <a href="https://www.linkedin.com/in/jasonwong94/"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
-        </span>
-        <span
-          class="btn-round-3x" id="contact-resume">
-          <a href="/resume.html"><i class="fa fa-briefcase fa-3x" aria-hidden="true"></i></a>
-        </span>
-        <span class="btn-round-3x" id="contact-twitter">
-          <a href="https://twitter.com/jasonwong_94"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-        </span>
-      </div>
-    </footer>
-  </body>
+				<p class="subtitle">
+					I also have had brief exposure to mobile and front end development.  
+				</p>
+				<p class="subtitle">
+					Outside of work I play, coach and officiate ice hockey. 
+				</p>
+			</div>	
+			<div class="hero-body">
+				<a href="http://www.linkedin.com/in/jasonwong94">
+					<i class='bx bxl-linkedin bx-md'></i>
+				</a>
+				<a href="http://www.github.com/jasonwong94">
+					<i class='bx bxl-github bx-md'></i>
+				</a>
+				<a href="">
+					<i class='bx bx-briefcase bx-md'></i>
+				</a>
+			</div>	
+		</section>
+	</body>
 </html>
